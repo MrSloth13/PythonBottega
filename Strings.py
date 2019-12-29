@@ -48,3 +48,55 @@ sentece_eight = 'THE QUICK BROWN FOX JUMPED'.lower()
 print(sentence_six)
 print(sentece_seven)
 print(sentece_eight)
+
+#notes 2
+"""
+alright so this one is more of just going through other case function that you can use on strings. some things to note are that the capitolize case function will only work on the very first letter. and note that title will capitolize the first 
+letter of every word. then obviously lower will make anything in the string lower case. best used when you want to make sure that the text has no capitols in it i suppose. 
+"""
+
+# How to Access Portions of Strings in Python----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"""
+well even he said this will be part reveiw and for me it definatly will since i dont quite remember how to in JavaScript but i think i do. hes starting off going over the fact that ranges, or really any kind of counting
+is done from a base of 0. so if you hava a list that is 5 items long then the last item in the list is item 4. i know you know what im talking about. when ever you make a string the programming lanuguage will make an index of all the 
+items. the first item will be zero and then you can count up from there. remember that spaces count. 
+"""
+
+starter_sentence = 'The quick brown fox jumped'
+  #index numbers =  0123456789 and so on. 
+
+print(starter_sentence[5].upper())
+
+starter_sentence_two = starter_sentence[5].__add__('hello')
+
+print(starter_sentence_two)
+
+starter_sentence = 'hello'
+
+print(starter_sentence)
+
+
+#notes 1
+"""
+So in python strings cannot be changed once they are assigned. i belive you can still reassign the variable but you can not change a part of the string. so you can say starter_sentence = 'something different' and it will still work
+but what you couldn't do is say starter_sentence[5] = "y". that will make it error out. so basically when you make a string variable, that strings conent cannot be replaced or changed without reassigning it so something completly different
+"""
+
+starter_sentence_three = 'The quick brown fox jumped'
+
+first_word = starter_sentence_three[0:3] #the way ranges work is the cut off is right before the number you put in. so really think about it like counting like normal instead of a base of 0. 
+
+print(first_word)
+
+new_sentence_two = 'Thy' + starter_sentence_three[3:] #leaving it blank will automatically go to the end. 
+
+print(new_sentence_two)
+
+#notes 2
+"""
+Okay so now i am staring to get it a bit more. the only way we were able to change the original string was to either reassign it entirely or to make a new variable and insert our word and add only the text we wanted after using a range. 
+Ranges by the way work really nice but a bit weird in python. so the syntax is inside the [] you would but where you want to start, then a : to separate and say you are calling a range, followed by the number you want it to stop at. note
+though that when you give it the last number it will stop before that index number and will only grab everything before it. so when calling out the end of the range you could really just count like normal and put that number in there. if 
+you want grab from the very begining or end how ever you would just leave that side of the : blank and python will automatically do the rest.
+"""
