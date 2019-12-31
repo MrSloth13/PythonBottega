@@ -100,3 +100,79 @@ Ranges by the way work really nice but a bit weird in python. so the syntax is i
 though that when you give it the last number it will stop before that index number and will only grab everything before it. so when calling out the end of the range you could really just count like normal and put that number in there. if 
 you want grab from the very begining or end how ever you would just leave that side of the : blank and python will automatically do the rest.
 """
+
+#Guide To Heredocs in Python---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#so all a heredoc is actually, is a multi-line string in python. i'm not sure if that is what they are called in other languages but in python they are forsure called a heredoc.
+
+
+
+content = """
+So i need a few different almost pharagraphs of text to try and turn into a multi-line string. 
+  and they are also being tabbed in on the second and third line from what i can see. 
+
+And on this one , the one which two lines that are both tabbed, both the second and third line are tabbed in the 
+  same amount instead of having the third line be tabbed in by another two spaces which if you
+  ask me would be very hard to keep track of. and this is hard to just come up with sentence on the fly
+
+And finally we make it to the last one and it is also the shortest one out of the bunch, while 
+  not quite being one line.
+""".strip()
+
+print(content)
+
+#notes 1
+"""
+So this was easy but also very helpfull. if you look in the example above we wanted to make the whole thing, including the spaces, into a single string that could be printed to the console. now if you just try to make this like a normal
+string it won't work. as soon as there is a space between lines or a line between lines it will error out since its looking for the end of the string. but if you put ''' in front and behind of the start and end of the whole string it will 
+work. now if you use the exact syntax as above then you will need to use the .strip() function to take away any empty lines that wernet originally there. the only other way to fix this is to have the ''' right next to the start and the 
+end of the string. if you put it above and below like above example the strip function is the only other way to fix that issue. 
+"""
+
+#How to Build a Raw Multiline String in Python--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# content_two = """
+# So i need a few different almost pharagraphs of text to try and turn into a multi-line string. 
+#   and they are also being tabbed in on the second and third line from what i can see. 
+
+# And on this one , the one which two lines that are both tabbed, both the second and third line are tabbed in the 
+#   same amount instead of having the third line be tabbed in by another two spaces which if you
+#   ask me would be very hard to keep track of. and this is hard to just come up with sentence on the fly
+
+# And finally we make it to the last one and it is also the shortest one out of the bunch, while 
+#   not quite being one line.
+# """
+
+# print(repr(content_two))
+
+long_string = '\nSo i need a few different alomost phoragraphs of text to try and turn into a multiline string\nand they are also being tabbed in on the second and third line from what i can see\n\nand on this one, the one which two line that are both tabbed, bothe the second and third liend are tabbed in the same\n'
+
+print(long_string)
+
+#notes 
+"""
+So for this im still a bit confused on what i did wrong with the long_string the first time since it just kept giving me a syntax error even though i did the same thing as jordan. either way i went in a manually typed it and it seemed to work 
+just fine for me. so first we went over the repr() function and what that is, or what its short for is representation, so it will show you what python is seeing and interpreting. when you do that you will see a bunch of \n appear all over
+the text and all the line spaces taken out. well that is what the \n's are for. anywhere there is a line break there will be a \n. you can see my example above on how that works. this is important since when you are working with API's they 
+will only send over raw data and you need to be able to format that. as far as formating goes, all i can see you do is just put the raw string with all the \n's in it into a single normal string and it will do the conversion and formating for
+you. but none the less you need to know what it is and what to do with it once you have it. 
+"""
+
+#Build a Dynamic Reducer in Python--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"""
+dynamic_reducer([1,2,3], '+') #6
+dynamic_reducer([1,2,3], '-') #-
+dynamic_reducer([1,2,3], '*') #6
+dynamic_reducer([1,2,3], '//') #-
+"""
+"""
+okay so some of the things jordan is telling me that need to be imported are operator and reduce from functools. 
+then i need to make a function called dynamic reducer that can take in a list argument and a +,-,*,/ operator as a string and preform the nessasary
+proccesses to reduce the list down to a single number. will have to do some reasearch and will probably take most of the day. 
+"""
+
+import functools
+import random
+import operator
+
