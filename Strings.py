@@ -172,7 +172,70 @@ then i need to make a function called dynamic reducer that can take in a list ar
 proccesses to reduce the list down to a single number. will have to do some reasearch and will probably take most of the day. 
 """
 
+"""
+okay so if i'm thinking of this correct in the function i will need to take the passed through list and perform the second argument of the operator in a for each loop. so in theory is would go through each element and perform the operator that was passed in. 
+"""
+
+#reasearch notes
+"""
+so from what i can find online so far is that a reduce function takes in a function, and a list. it will apply that funcion to all the list elements. 
+"""
+#all of the things i needed to import for this to work. with the exception of operator if i'm looking at things correctly. 
 import functools
 import random
 import operator
+
+#some of the inital code to get the reduce function to work with randomly generated operators to make sure that i was getting a different result to show it working just by running the program again. 
+"""
+ran_number = random.randint(0,3)
+
+print(ran_number)
+
+lis = [ 1 ,2 ,3 ,4 ,5 ,6 ,9 , ]
+lis_three =['a+b', 'a-b', 'a*b', 'a//b']
+
+print(functools.reduce(lambda a,b: eval(lis_two[ran_number]),lis))
+"""
+
+"""
+some of the answers i get:
+-28
+6480
+0.00015432098765432098
+30
+
+So it works!!! holy shit. now i need to get it in a funciton that can take the random number generator or a manual one. 
+"""
+
+def random_dynamic_reducer():
+  ran_number = random.randint(0,3)
+  lis = [ 1 ,2 ,3 ,4 ,5 ,6 ,9 , ]
+  lis_two =['a+b', 'a-b', 'a*b', 'a//b']
+
+  print(functools.reduce(lambda a,b: eval(lis_two[ran_number]),lis))
+
+random_dynamic_reducer()
+
+"""
+alright so there is the function that will work with random generation but no pass in. that is seeming harder then fist expected. 
+"""
+
+
+
+def dynamic_reducer(passed_list, passed_operator):
+  print(functools.reduce(lambda a,b: eval("a" + passed_operator + "b"),passed_list))
+
+dynamic_reducer([ 1 ,2 ,3 ,4 ,5 ,6 ,9 , ], "*")
+
+# victory notes!
+"""
+Oh man that was a challenge forsure but by the end i definatly see why he left us to research that on our own. i need to be able to be givin a problem and figure it out from my own means. which really means searching the internet but for 
+something like a programming language its either that or some books and i dont just have a bunch of python 3 books laying around and there are also not always that best examples there for me so the internet works out well for something like 
+research on stuff like this. i also really understand making a function that has variables that you pass in and call when you call the function. over all a very good lesson for me today. i did waste a ton of time slacking off since i really 
+had no idea on where to start but once i sat back down and just hammered my way through it i got it in the end. now to see what the rest of the video will show and to see how differently jordan did it and or if i really did it right. based off
+his instructions i do feel i acchomplished the mission on this one. 
+"""
+
+# now back to the video to see if i did it correctly. 
+  
 
