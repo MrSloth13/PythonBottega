@@ -184,6 +184,7 @@ so from what i can find online so far is that a reduce function takes in a funct
 import functools
 import random
 import operator
+from functools import reduce
 
 #some of the inital code to get the reduce function to work with randomly generated operators to make sure that i was getting a different result to show it working just by running the program again. 
 """
@@ -209,8 +210,8 @@ So it works!!! holy shit. now i need to get it in a funciton that can take the r
 
 def random_dynamic_reducer():
   ran_number = random.randint(0,3)
-  lis = [ 1 ,2 ,3 ,4 ,5 ,6 ,9 , ]
-  lis_two =['a+b', 'a-b', 'a*b', 'a//b']
+  lis = [ 1 ,2 ,3 ,4 ,5 ,6 ,9]
+  lis_two =['a+b', 'a-b', 'a*b', 'a/b']
 
   print(functools.reduce(lambda a,b: eval(lis_two[ran_number]),lis))
 
@@ -225,7 +226,7 @@ alright so there is the function that will work with random generation but no pa
 def dynamic_reducer(passed_list, passed_operator):
   print(functools.reduce(lambda a,b: eval("a" + passed_operator + "b"),passed_list))
 
-dynamic_reducer([ 1 ,2 ,3 ,4 ,5 ,6 ,9 , ], "*")
+dynamic_reducer([ 1 ,2 ,3 ,4 ,5 ,6 ,9], "*")
 
 # victory notes!
 """
@@ -237,5 +238,31 @@ his instructions i do feel i acchomplished the mission on this one.
 """
 
 # now back to the video to see if i did it correctly. 
-  
 
+"""
+def jordans_dynamic_reducer(collection, op):
+  operators = {
+    "+": operator.add,
+    "-": operator.sub,
+    "*": operator.mul,
+    "/": operator.truediv,
+  }
+
+  return reduce((lambda total, element: operators[op](total, element)), collection)
+
+
+  
+print(dynamic_reducer([1,2,3], '+')) 
+print(dynamic_reducer([1,2,3], '-')) 
+print(dynamic_reducer([1,2,3], '*')) 
+print(dynamic_reducer([1,2,3], '/'))
+"""
+
+#final notes
+"""
+Wow so i did get it right but not in any way he showed and mine is even shorter somehow. guess i just got really lucky on this one. its very different the way he went about it. he made a library, which is shown above as an operators, which 
+would assign a givin input with a corrisponding function. so when you passed in the correct operator, the function would then perform the correct operator. when it came to reduce we were mostly on the same page with lambda but where we differ
+is where i call eval he just puts the library name followed by [] with the passed in string in there, followed by what i have as (a,b) in () for some reason. that is the only part i dont fully understand but i'm sure i will figure it out one day. 
+"""
+
+# Guide to Modern Python String Interpolation---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
