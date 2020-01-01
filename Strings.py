@@ -265,4 +265,4 @@ would assign a givin input with a corrisponding function. so when you passed in 
 is where i call eval he just puts the library name followed by [] with the passed in string in there, followed by what i have as (a,b) in () for some reason. that is the only part i dont fully understand but i'm sure i will figure it out one day. 
 """
 
-# Guide to Modern Python String Interpolation---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Guide to Modern Python String Interpolation---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
