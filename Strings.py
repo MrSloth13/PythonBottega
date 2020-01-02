@@ -1,5 +1,9 @@
 #String Basics --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+section_title1 = 'String Basics'
+section_spacer = f'{section_title1}--------------------------------------------'
+print(section_spacer)
+
 sentence = 'The quick brown fox jumped over the lazy dog'
 # sentence = "The quick brown fox jumped over the lazy dog"
 # Note that python doesn't care like other languages on which on you use ("" or '') it will treat is as the same. 
@@ -16,6 +20,10 @@ print(sentence_four)
 
 
 #Python String Case Funcitons ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title2 = 'Python String Case Funcitons'
+section_spacer2 = f'{section_title2}--------------------------------------------'
+print(section_spacer2)
 
 # so from what i can tell a case for a case fucntion is the abaility to call a function on an object. in the example below, putting a . then the name of the function and followed by () called a funcition to make all characters uppper case. 
 
@@ -56,6 +64,10 @@ letter of every word. then obviously lower will make anything in the string lowe
 """
 
 # How to Access Portions of Strings in Python----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title3 = 'How to Access Portions of Strings in Python'
+section_spacer3 = f'{section_title3}--------------------------------------------'
+print(section_spacer3)
 
 """
 well even he said this will be part reveiw and for me it definatly will since i dont quite remember how to in JavaScript but i think i do. hes starting off going over the fact that ranges, or really any kind of counting
@@ -103,6 +115,10 @@ you want grab from the very begining or end how ever you would just leave that s
 
 #Guide To Heredocs in Python---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+section_title4 = 'Guide To Heredocs in Python'
+section_spacer4 = f'{section_title4}--------------------------------------------'
+print(section_spacer4)
+
 #so all a heredoc is actually, is a multi-line string in python. i'm not sure if that is what they are called in other languages but in python they are forsure called a heredoc.
 
 
@@ -130,6 +146,10 @@ end of the string. if you put it above and below like above example the strip fu
 """
 
 #How to Build a Raw Multiline String in Python--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title5 = 'String Basics'
+section_spacer5 = f'{section_title5}--------------------------------------------'
+print(section_spacer5)
 
 # content_two = """
 # So i need a few different almost pharagraphs of text to try and turn into a multi-line string. 
@@ -159,6 +179,10 @@ you. but none the less you need to know what it is and what to do with it once y
 """
 
 #Build a Dynamic Reducer in Python--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title6 = 'Build a Dynamic Reducer in Python'
+section_spacer6 = f'{section_title6}--------------------------------------------'
+print(section_spacer6)
 
 """
 dynamic_reducer([1,2,3], '+') #6
@@ -266,3 +290,71 @@ is where i call eval he just puts the library name followed by [] with the passe
 """
 
 # Guide to Modern Python String Interpolation---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = 'Guide to Modern Python String Interpolation'
+section_spacer7 = f'{section_title7}--------------------------------------------'
+print(section_spacer7)
+
+#what string interpolation will allow you to do is to run code inside of string, from what jordan has told me so far. 
+
+name = 'Kristine'
+gretting = f'Hi {name}'
+print(gretting)
+
+#notes 1
+"""
+so as you can see from the example above the syntax is a bit weird but i get why its useful and i see how to implement it. so before you start the string you need to put an f then start your string. then in the parts where you want the
+dynamic text to go you put some {} and anything inside will be treated as a python script. so like the example above we are just calling a variable, so when i print it out, the the data of the content will be what is printed. i could put something 
+like 2+2 in there and i would get 4. so you get the point. so far very useful and i am following. 
+"""
+
+name_two = 'Karen'
+product = 'Python learning course'
+
+email_content = f"""
+Hi {name_two}
+
+Thank you for purchasing {product}
+
+Reguards,
+
+Sales Team
+"""
+
+print(email_content)
+
+#notes 2
+"""
+Wow okay so this is really cool. and from what jordan is saying, this is going to be used in, if not all, most programs will use string interpolation, especially in something like the example above. that example is showing a combination of a heredoc 
+with the string interpolation. looking at an example like that is definatly showing me the power and the need for something like this. especially knowing how to do it. the syntax isn't too bad or anything. really its just an f and {} and you are off
+to the races. much fun on this one. 
+"""
+
+#How to Use Python's format method to Implement Index Based String Interpolation----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = "How to Use Python's format method to Implement Index Based String Interpolation"
+section_spacer8 = f'{section_title8}--------------------------------------------'
+print(section_spacer8)
+
+name_three = 'Bob'
+age = 12
+product = 'Python eLearning Course'
+
+greeting_two = "Hi {0}, you are listed as {1} years old and you have purchased: {2}...".format(name, age, product)
+
+print(greeting_two)
+
+#notes
+"""
+So he isn't showing us this because this is the way we should do this, hes showing us because when looking at older programs this is the way some of them might be done. to be clear here this and the course before are the same thing but go about it 
+in different way with different syntax. in this version you don't need to put the f in the front. no, you make the string normally then where you want the dynamic part you put {} with an index number in it. it can be anything starting from 0 up to 
+what the maximun amount of these dynamic feilds you want. then at the end of the string right after the last ' you put .format(). in the () of that you list out what you want to go into each index. the fist one will be zero and so on. these will 
+corrolate the the index number in the {}. you can pass in whatever you want, strings, variables, numbers, and i will put them in. this can get very out of hand with large strings and typically is harder to read. so best to probably do it the first 
+way with the f in the front but at least i will know what i am looking at if i see this. 
+"""
+
+#Finding a Substring in Python with: Find, Index, and In----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title9 = "Finding a Substring in Python with: Find, Index, and In"
+section_spacer9 = f'{section_title9}--------------------------------------------'
+print(section_spacer9)
