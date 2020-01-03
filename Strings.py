@@ -358,3 +358,103 @@ way with the f in the front but at least i will know what i am looking at if i s
 section_title9 = "Finding a Substring in Python with: Find, Index, and In"
 section_spacer9 = f'{section_title9}--------------------------------------------'
 print(section_spacer9)
+
+#so the goal of this section is to go over three basic ways you can search inside of a string. they are the find, index and in. 
+
+search_sentence = 'The quick brown fox jumped over the lazy dog.'
+
+query = search_sentence.find('quick')
+
+print(query)
+#the result is 4. that might seem weird but that is the start of the index of that work. 
+
+query_two = search_sentence.index('quick')
+
+print(query_two)
+#the answer is also 4 since it really gets you the same result but one major difference is that if find can't find the string, it will just return a -1, where as index will throw an error. index has its place for algorythems but find is usually better
+
+query_three = 'fox' in search_sentence
+
+print(query_three)
+
+#notes
+"""
+Okay so after seeing the 'in' way of doing it i can see why it is the most commonly used version of finding a string or a substring in a string. so find and index basically do the same thing, just one of them wont throw an error if it doesn't fint 
+the value where as in works much different. in syntax and in what it returns. so find and index will return the starting point for the substring that you are looking for. where as in will just return true or false on weather that substring is in the 
+string. since most of the time you won't really care where the string is located unless you are looking for a range, you just want to know if a certain string contains a phrase or a word. i can definatly see why in is the more prefered way. looks
+way cleaner too. 
+"""
+
+#Using Python's replace Function to Find and Replace String Values-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title10 = "Using Python's replace Function to Find and Replace String Values"
+section_spacer10 = f'{section_title10}--------------------------------------------'
+print(section_spacer10)
+
+replace_sentence = 'The quick brown fox jumped over the lazy dog'
+
+replace_sentence = replace_sentence.replace('quick', 'slow')
+
+print(replace_sentence)
+
+#notes
+"""
+So that was a quick section but i think it has reaffirmed how i thought about the non changability of strings in python. so its still impossible to change a string but reassisnging the string back to itself and changing it there is totally allowed. 
+the key is the original string is still untouched. but you have reassigned the variable that the old string had to a new string which is differnt. in this section we went over the replace funcion. which is simple and all you do is start it like 
+any other case funcion with a .replace() after you call the string or variable with a string inside. now in the () you need to pass two arguments. the first is what you want to replace and the second is what you want to replace it with. pretty 
+simple if you ask me. i think i got dis one. 
+"""
+
+#Using a Negative Index with a Python String----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title11 = "Using a Negative Index with a Python String"
+section_spacer11 = f'{section_title11}--------------------------------------------'
+print(section_spacer11)
+
+#super short.
+
+next_sentence = 'The quick brown fox jumped over the lazy dog'
+
+print(next_sentence[-3:])
+
+#notes
+"""
+Wow that was like really short but was still a good refreasher and did learn how i can work with negitive numbers and ranges. so basically when you are calling an index, if you use a negitive number it will start from the right and move to the 
+left instead of the other way around. this also works with ranges so like in the example above. all in all this was simple and i appreachate it since its been seeming like its been getting pretty tough latley. 
+"""
+
+#Overview of Python's strip, lstrip, and rstrip Functions----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title12 = "Overview of Python's strip, lstrip, and rstrip Functions"
+section_spacer12 = f'{section_title12}--------------------------------------------'
+print(section_spacer12)
+
+url = 'https://google.com    '
+
+print(url.strip())
+
+url_two = 'https://google.com'
+
+print(url_two.strip('https://')) #note that the error that is showing up really isn't an error and wont crash the program but it is warning us that using it like this could lead to users being able to use the strip function and could mess stuff up. 
+
+url_three = 'https://google.com'
+
+url_three = url_three.lstrip('https://')
+url_three = url_three.rstrip('.com')
+url_three = url_three.capitalize()
+
+print(url_three)
+
+#notes
+"""
+Okay so this will be helpful and will be very helpful when it comes to machine learning. so if you remember if you pass the strip function on a string it will strip all the dead space on either side. now in the () you can pass in the string part
+that you want to strip. now if you want to strip something entirely on the left or right side there is a lstrip and a rstrip. i think it is pretty obvious which one does which but if you reassign the string with an l and r strip you can clean up a 
+string on both side very well and can even add more reassigns to format the data correctly. this can be very usful in machine learning since the data you will be getting will be raw and you might not need it all so you need to be able to strip most
+of it down to what you just need. a very useful section. 
+"""
+
+#Guide to Python's Partition Function------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title13 = "Guide to Python's Partition Function"
+section_spacer13 = f'{section_title13}--------------------------------------------'
+print(section_spacer13)
