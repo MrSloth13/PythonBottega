@@ -458,3 +458,66 @@ of it down to what you just need. a very useful section.
 section_title13 = "Guide to Python's Partition Function"
 section_spacer13 = f'{section_title13}--------------------------------------------'
 print(section_spacer13)
+
+heading = "Python: An Introduction"
+
+print(heading)
+
+header,_, subheader = heading.partition(":")
+
+print(header)
+print(subheader.strip())
+
+#notes
+"""
+So in the end, i see why the partition function is useful but it is also a bit of a let down due to its limits. the most impactful part for me was the knowleage that putting an _ as the name of a variable you want to assign data you really don't care
+about. that is not a rule but it is best practice and since i would hope you dont acutally title a variable with just a _ you should never accedentitly use it. now the big limit with partition funciton is it can only separate a string in half basically. 
+so when you want to partition a string you need to make 3 new variables in a row spaced by "," then make it = to the strings variable with the partition case fucntion and pass in (':'). since that is the only way a partition knows where to separate it. 
+the : is what is stored in the second variable and the stuff in front of it will be in varaible one and what is after is in the third variable. you can see the syntax above. pretty simple but sucks since partition cant work with any more splits. you 
+only get the split into two parts with a : as the middle varaible. 
+"""
+
+#Guide to the Python split Function----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title14 = "Guide to the Python split Function"
+section_spacer14 = f'{section_title14}--------------------------------------------'
+print(section_spacer14)
+
+tags = 'python, coding, programming, development'
+
+list_of_tags = tags.split(', ')
+
+print(list_of_tags)
+
+#notes
+"""
+Okay so first of this is the much better version of partition. you dont need to define your new variable's off the jump, and it can do as many splits as you need. the way it works is you would make a new variable and then have it be = to the variable
+of the string and then like normal, add a case function of split on it. now much like partition you would just pass in the letter or charcter you want it to be split at, then the split will return a list or an array. and each element between the selected
+character or letter will be its own string. very nice. the biggest difference between split and partition besides the size is what they return. a partition will return a tulip or three strings. where as a split will return a list. (one side note, but 
+jordan mentioned a best practices note that was too good. it was that its not good to reassign a variable to a different data type. they most often lead to some kind of bug)
+"""
+
+#How to Check if Strings Represent Numbers or Alphanumeric Characters in Python--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title15 = "How to Check if Strings Represent Numbers or Alphanumeric Characters in Python"
+section_spacer15 = f'{section_title15}--------------------------------------------'
+print(section_spacer15)
+
+api_data = '5'
+greeting_three = 'Hi'
+
+print(api_data.isalpha())
+print(greeting_three.isalpha())
+print(api_data.isnumeric())
+print(greeting_three.isnumeric())
+
+#notes
+
+"""
+Wow this is cool. so API's really only out put strings. which is why python is so commonly used to manage request is because it handles strings so very well. now some data you get back from the API may need to be checked against a database but
+a database needs an index reference and doesn't take in any non number value. so you might need to make sure a string has a numeric value in it. by just calling the variable name and useing the .isnumeric case function it will return true or 
+false. you could use .isalpha to check if it is letters but it will only return true if 100% of the chracters are letters. if there is any spaces it will return false which could be a problem. best to probably just check for what you actually 
+need to know. 
+"""
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
