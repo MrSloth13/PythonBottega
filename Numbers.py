@@ -32,3 +32,124 @@ section_title2 = 'Mathematical Operators in Python'
 section_space2 = f'{section_title2}--------------------------------------------'
 print(section_space2)
 
+print("Addition")
+print(100 + 42)
+print("The operator for addition is '+'") #pretty simple. got it
+
+print("---")
+
+print("Subtraction")
+print(100 - 42)
+print("The operator for subtraction is '-'") #pretty simple. got it
+
+print("---")
+
+print("Division")
+print(100 / 42)
+print("The operator for division is '/'") #pretty simple. got it
+
+print("---")
+
+print("Floor_Division")
+print(100 // 42)
+print("The operator for floor division is '//'") # this is cool. so what it does is round DOWN to the lowest whole number. so if its any less then a whole number it will round down. really cool. the result should explain.
+
+print("---")
+
+print("Multiplication")
+print(100 * 42)
+print("The operator for mulitiplication is '*'") #pretty simple. got it
+
+print("---")
+
+print("Modulus")
+print(100 % 42)
+print(2 % 2)
+print(5 % 2)
+print(25 % 2)
+print("The operator for modulus is '%'")
+
+"""
+okay so this is weird as fuck man lol. so what this does is it will take the number on the left hand side of the % sign and divide it into the number on the left as many time as possible and will return the REMAINDER. so
+if i am understanding this correctly it will just tell you what is left over. jordan days he mostly uses it to see if an number is an even or an odd. if you use 2 then it should evenly divide into any size number where as
+an odd number should always have atleast 1 left over after dividing by 2. 
+"""
+
+print("---")
+
+print("Exponents")
+print(100 ** 2)
+print(25 ** 2)
+print("The operator for an exponent is '**'") #pretty simple. just like normal exponents once you get past the syntax which isn't that weird when you think about it since an exponent is just multiplication. 
+
+#notes
+"""
+uhmm i think i have covered most of anything in the notes already. modulus was a bit confusing at first but after seeing how it works i understand it and know how i can use it in other types of programs. other then that
+it was pretty much what you though most of the time on which character would be for each operator. floor divsion was kinda weird but after seeing the result i understood right away. 
+"""
+
+#Guide to the Order of Operations in Python------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title3 = 'Guide to the Order of Operations in Python'
+section_space3 = f'{section_title3}--------------------------------------------'
+print(section_space3)
+
+calculation = 8 + 2 * 5 - (9+2) ** 2
+
+print(calculation)
+
+#notes
+"""
+So this really is just pemdas. just like in JavaScript the order of operations is just pemdas. i was able to get the same answer on my own as the program did and i went down the word pemdas and went and did each one in 
+the order and got the same answer so i am assuming i am right. short lesson on this one. 
+"""
+
+#How to Use Assignment Operators in Python--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title4 = 'How to Use Assignment Operators in Python'
+section_space4 = f'{section_title4}--------------------------------------------'
+print(section_space4)
+
+total = 100
+
+print(total)
+
+#notes 1
+"""
+Okay so i think i totally get this one. i passed out last night before i was able to take notes but i think this is just going over perfoming an operator and assigning a variable at the same time. i had to do this 
+for the game to take away one health. all it really is syntax wise is what ever operator you want to perform followed by an equals sign. i'm sure i will have some examples below but it looks the same as C# from what 
+i can see so i'm pretty sure that i got this one. 
+"""
+
+total += 10
+print(total)
+
+total -= 20
+print(total)
+
+total *= 3
+print(total)
+
+total /= 4
+print(total)
+
+total //= 3
+print(total)
+
+total **= 2
+print(total)
+
+total %= 2
+print(total)
+
+#notes 2
+"""
+Okay so i was completly right lol. it really is the same syntax to C# and works the same too. so when you assign a variable you can perform an operator on it as you are assigning it. i mean i really do already 
+know this one since i have used it a ton for games. 
+"""
+
+#Decimal vs Float in Python-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title5 = 'Decimal vs Float in Python'
+section_space5 = f'{section_title5}--------------------------------------------'
+print(section_space5)
