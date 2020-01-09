@@ -26,7 +26,7 @@ number data type. well since we are dealing with sub classes now they can be com
 good refreshing point was that python will automatically determie the data type when the program is ran. there is no need like in C# to call in or float on the variable when you assign in. 
 """
 
-#Mathematical Operators in Python----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Mathematical Operators in Python---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 section_title2 = 'Mathematical Operators in Python'
 section_space2 = f'{section_title2}--------------------------------------------'
@@ -88,7 +88,7 @@ uhmm i think i have covered most of anything in the notes already. modulus was a
 it was pretty much what you though most of the time on which character would be for each operator. floor divsion was kinda weird but after seeing the result i understood right away. 
 """
 
-#Guide to the Order of Operations in Python------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Guide to the Order of Operations in Python----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 section_title3 = 'Guide to the Order of Operations in Python'
 section_space3 = f'{section_title3}--------------------------------------------'
@@ -104,7 +104,7 @@ So this really is just pemdas. just like in JavaScript the order of operations i
 the order and got the same answer so i am assuming i am right. short lesson on this one. 
 """
 
-#How to Use Assignment Operators in Python--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#How to Use Assignment Operators in Python-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 section_title4 = 'How to Use Assignment Operators in Python'
 section_space4 = f'{section_title4}--------------------------------------------'
@@ -148,8 +148,41 @@ Okay so i was completly right lol. it really is the same syntax to C# and works 
 know this one since i have used it a ton for games. 
 """
 
-#Decimal vs Float in Python-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Decimal vs Float in Python---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 section_title5 = 'Decimal vs Float in Python'
 section_space5 = f'{section_title5}--------------------------------------------'
 print(section_space5)
+
+product_cost = 88.40
+commision_rate = 0.08
+qty = 450
+
+product_cost += (commision_rate * product_cost)
+print(product_cost * qty) #42962.4
+
+from decimal import Decimal
+
+d_product_cost = Decimal(88.40)
+d_commission_rate = Decimal(0.08)
+d_qty = 450
+
+d_product_cost += (d_commission_rate * d_product_cost)
+print(d_product_cost * d_qty) #42962.40000000000282883716451
+
+#notes
+"""
+Holy shit lol. i definatly see why one is called more accurate. so if it wasn't clear after that i don't know what is. you can see the answer that the floats gave me vs the decimal and one is way bigger then they other.
+its crazy that if it didn't make it a deciaml i would have never known that the answer was that off. some interesting things about using decimals though is for one its the only data type so far in python that i have 
+seen that you need to call its type in a way before assigning it. well i guess lets start at the fact that you will need to import the decimal library and the decimal funcitons in like i did above to gain access to
+decimals in the first place. otherwise it would always be a float. now the reason you have to call the data type is because you are calling a function and just putting the float in the () of the function. if its any 
+suprise the function to make a float a decimal is and i quote "Decimal()". that is it. once you put your float in there it will be treated adn return a decimal when used in a math problem. and from what you can see
+above that there is definatly some more precision that was not seen if it weren't for the decimal. 
+"""
+
+#How to Convert Between the Integer, Float, Decimal and Complex Numeric Data Types in Python----------------------------------------------------------------------------------------------------------------------------------
+
+section_title6 = 'How to Convert Between the Integer, Float, Decimal and Complex Numeric Data Types in Python'
+section_space6 = f'{section_title6}--------------------------------------------'
+print(section_space6)
+
