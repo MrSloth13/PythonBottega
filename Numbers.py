@@ -314,6 +314,8 @@ time on it i am sure i would have gotten to it. since once i saw jordan make the
 
 #-----------------------------------------------------------------------------------------------------------
 
-section_title9 = 'Build a Manual Exponent Function in Python'
+section_title9 = 'Section introduction'
 section_space9 = f'{section_title9}--------------------------------------------'
 print(section_space9)
+
+#this is going to be short but i think the number section is over. this was good and challenging but i think i see why python is the first choice when starting to develope machine learning algorythims. 
