@@ -190,10 +190,130 @@ product_cost_2 = 88.40
 commision_rate_2 = 0.08
 qty_2 = 450
 
-print(int(product_cost_2))
+print(int(product_cost_2)) #int conversion syntax
 
-print(float(qty_2))
+print(float(qty_2)) #float conversion syntax
 
-print(Decimal(qty_2))
+print(Decimal(qty_2)) #decimal conversion syntax
 print(Decimal(commision_rate_2))
-print(complex(commision_rate_2))
+
+print(complex(commision_rate_2)) #complex conversion syntax
+
+#notes
+"""
+Okay so this was pretty straight forward. so its like i am calling the variable in C# but i but the name in () and i dont call a veriable each time i do it i will be converting a pre-existing variable into the 
+number type that i want. the really cool one was the complex function. it will convert a number into a complet mathmatical object which is used in data science but not much else. im usre with my insterest in AI 
+that i will find my self using them. 
+"""
+
+#Overview of Popular Math Functions in Python---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = 'Overview of Popular Math Functions in Python'
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
+
+import math
+
+loss = -20.25
+product_cost3 = 89.99
+
+print(abs(loss)) # this will take the absolute value of the number. so basically it will take out the negitive part of it. 
+
+print(math.floor(product_cost3)) #this will round the number down to the lowest whole number. much like floor division but you dont need to divide to reduce a float down to an int
+
+print(math.ceil(product_cost3)) #this will do the opposite. this will round a number up to the highest whole number. that one is nice to know. celi is short for ceiling fyi
+
+print(abs(math.floor(loss))) # this is showing how you can combine these to do mulitple things in one line. 
+print(math.floor(abs(loss))) # the other one looked wrong since floor was called first so rounding down a negitive would make it go one higher if you took away the negitive which is what we did with abs but i flipped it
+
+print(round(product_cost3)) # now the round function works like traditional rounding. so 5 or higher and it will round up and lower will round down. 
+print(round(loss))
+
+print(math.sqrt(product_cost3)) # this will give you the square root of a number. sqrt is how the function for square root is spelled. 
+
+print(math.pow( 5, 2 )) #this how you call an exponent. the fist number is the one which will be getting the exponent while the second is the exponent number note that you get a float as a return. 
+print(math.pow(product_cost3, 3)) #showing that you can put a variable in the spot of a number and cube something instead of squaring it. 
+
+#notes
+"""
+man this was cool. so most of the notes explain what each does but it is interesting that not all of them are in the math libarary. some of them are just in the native language and i will need to make sure i know
+which need which so i dont try to call an abs with math infront of it and get an error. i will look pretty stupid. 
+"""
+
+#Build a Manual Exponent Function in Python------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = 'Build a Manual Exponent Function in Python'
+section_space8 = f'{section_title8}--------------------------------------------'
+print(section_space8)
+
+#so what we want to build is a function that you can pass in two values and it will take the second number and use it as an exponent on the first number.
+
+#my first try
+
+def manual_exponent(main, ex):
+  the_result = math.pow(main, ex)
+
+  return the_result
+
+print(manual_exponent(2,3))
+
+#well it seems i got it on my first try. it does return a float but i feel i can just put int infront of math.pow and get the desired result type. lets see how jordan will do it. 
+#okay plot twist one of the solutions involve the reduce function. let see if i can manage that. 
+
+from functools import reduce
+import functools
+
+# def new_manual_exponent(new_main, new_ex):
+# #   new_result = functools.reduce(lambda a,b:a** str(new_ex),new_main)
+#   new_result = functools.reduce(new_main ** new_ex)
+
+#   return new_result
+
+# print(new_manual_exponent(2,3))
+
+#that failed and i give. i got it the first time but i am not sure how to use the reduce function right and am out of time. 
+
+#jordan
+
+def j_manual_exponent(num, exp):
+  counter = exp - 1
+  total = num
+
+  while counter > 0:
+    total *= num
+    counter -= 1
+
+  return total
+
+print(j_manual_exponent(2,3))
+
+"""
+okay so this had me tripped up at first but i totally get it now. so he starts by making a counter variable and making it one less then the exponent(since you dont need to multiply against itself if you start
+with it) then make a total variable and make it set to the number variable off the start. then you make a while loop for as long as the counter is above zero to multiply the total buy the number variable. so 
+it will take the number that you put in and multiply it by the total until the counter runs out. and in the while loop make sure to reduce the counter by one. and man there you go. let see how the reduce one looks. 
+"""
+
+# def j2_manual_exponent(num_2, exp_2):
+#   computed_list = [num_2] * exp_2
+
+
+def new_manual_exponent(new_main, new_ex):
+  computed_list_2 = [new_main] * new_ex
+  new_result = functools.reduce(lambda a,b:a*b,computed_list_2)
+
+  return new_result
+
+print(new_manual_exponent(2,3))
+
+#final notes
+"""
+okay so i get how this is done but man i am mad i missed it. especially the reduce version of it. since lambda needed a list i froze but now i see how you can make a dynamic list which would give me a list containing
+the first number and have it repeat as many times as the second number. then in the lambda function you but pass a,b : a*b, list and it will multiply one after the other in the list. pretty simple. if i spent more
+time on it i am sure i would have gotten to it. since once i saw jordan make the list i was able to finish right after. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------
+
+section_title9 = 'Build a Manual Exponent Function in Python'
+section_space9 = f'{section_title9}--------------------------------------------'
+print(section_space9)
