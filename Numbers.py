@@ -186,3 +186,14 @@ section_title6 = 'How to Convert Between the Integer, Float, Decimal and Complex
 section_space6 = f'{section_title6}--------------------------------------------'
 print(section_space6)
 
+product_cost_2 = 88.40
+commision_rate_2 = 0.08
+qty_2 = 450
+
+print(int(product_cost_2))
+
+print(float(qty_2))
+
+print(Decimal(qty_2))
+print(Decimal(commision_rate_2))
+print(complex(commision_rate_2))
