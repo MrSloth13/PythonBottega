@@ -24,6 +24,6 @@ breaks, you can go back to the stable version and try again.
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
 
-section_title2 = ''
+section_title2 = 'Difference Between Git and GitHub'
 section_space2 = f'{section_title2}--------------------------------------------'
 print(section_space2)
