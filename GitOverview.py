@@ -27,3 +27,19 @@ breaks, you can go back to the stable version and try again.
 section_title2 = 'Difference Between Git and GitHub'
 section_space2 = f'{section_title2}--------------------------------------------'
 print(section_space2)
+
+"""
+So what is the difference?
+
+Well its kinda in the name. GitHub is a hub for the git repository. git is a centralized version control system but unless its on a server(github) you are really 
+the only one that can work on it. where if we go back a section, one of the main benifits of git is that multiple people can work on it. so it make sense to have 
+a place where anyone from anywhere can get access to the centralized version system. github is also a visual layer to git. there is a version that is visible to 
+the terminal but that isn't as nice to look at. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+
+"""
+And thats it. i knew it wouldn't be much but i can see git being a really hard thing to understand and get working if you are very new to programming so module one
+was a great choice to put it.
+"""
