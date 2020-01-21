@@ -146,3 +146,47 @@ length, and index() will give you the index number of the value you input.
 section_title6 = 'How to Sort Lists in Python'
 section_space6 = f'{section_title6}--------------------------------------------'
 print(section_space6)
+
+tags_two = ['python', 'develpment', 'tutorials', 'code']
+
+print(tags_two)
+
+tags_two.sort()
+
+print(tags_two) # by default the sort function will arrange the list by alphabetical importance or order. 
+
+tags_two.sort(reverse=True)
+
+print(tags_two) #this will sort the list in reverse. this is used for numbers a ton so the most new thing can be on the top instead of the oldest which is what you get when you use sort by itself. 
+
+totals = [234, 1, 3, 2535]
+
+print(totals)
+
+totals.sort() #when dealing with numbers sort defaults to sorting based off value. so least value first and highest last. 
+
+print(totals)
+
+totals.sort(reverse=True) #so when you reverse the highest nunber goes last. 
+
+print(totals)
+
+#notes
+"""
+So this was fun. i can see the reasons one would have to sort a list and the sort function seems like an easy way to sort a list based off some pretty simple needs like having them in a normal
+or reversed order based on values or alphabetical order. other then that i dont know how to sort a list down to calling which element i want where. maybe soon but for now the sort function was
+a great start. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = 'Using the join Function in Python to Build a URL Query String'
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
+
+uri = 'https://www.google.com/search?q='
+tags_three = ['python', 'development', 'tutorial']
+formatted_tags = '+'.join(tags_three)
+query_tags = f'{uri}{formatted_tags}'
+
+print(query_tags)
