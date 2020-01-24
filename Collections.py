@@ -186,7 +186,129 @@ print(section_space7)
 
 uri = 'https://www.google.com/search?q='
 tags_three = ['python', 'development', 'tutorial']
-formatted_tags = '+'.join(tags_three)
-query_tags = f'{uri}{formatted_tags}'
+formatted_tags = '+'.join(tags_three) # This is what will join all of the tag list with a '+' inbetween them. you can use any character you want but it is best practice to use a plus for readabilty. 
+query_tags = f'{uri}{formatted_tags}' # going back to string interpolation and using the f{} so insert and add two different string variables together. 
 
 print(query_tags)
+
+#notes
+"""
+So this section was mainly to show how to use the join function. he did it by building a very real world example. the example we made is more or lees the same process that google actually uses
+on their system. now they have a much more complicated tagging system but the concept of joining all of the tags together and then combining the tags with with url or uri can give you a search
+result that a browser can understand.
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = 'Overview of Ranges in Python Lists'
+section_space8 = f'{section_title8}--------------------------------------------'
+print(section_space8)
+
+tags_four = ['python', 'develpment', 'tutorial', 'code']
+
+tag_range = tags_four[1:2]
+
+print(tag_range) #note that just like in the string section when you put in the second range limit it will stop at that number and only return what was before it. you would need to go one more to 
+#include it. 
+
+tag_range_two = tags_four[1:]
+
+print(tag_range_two)#note this will return from the index of one till the end of the list. 
+
+tags_range_three = tags_four[:3]
+
+print(tags_range_three)#note this will give you a return of the start of the list until the element before 3 since it was the limit and will return all before that variable. 
+
+tag_range_four = tags_four[:-1]
+
+print(tag_range_four) #note that this will return everything from the start to everthing until one fromt he end. like string when you use a negitive number it will start from the back of the list
+
+tag_range_five = tags_four[:]
+
+print(tag_range_five) #note that this will return the whole list. not very useful except learning. 
+
+#notes
+"""
+So from what jordan says this syntax will be very important and used in just about every machine learning program in python. so this is very important that i understand how ranges work in python.
+Thankfully they work almost identical to string ranges in python. you would just call [] like you want an index number and then put your range split by a colon. leaving either side blank will have
+python go to the very end of either side. using a negitive number will start from the back of the list. the only other notable thing is that the second number you give for the end of the range will
+end at that element. which means it wont get returned. only everthing before the limit will be returned. if you wanted that element you would need to go one index number higher to get it returned 
+as well. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title9 = 'Advanced Techniques for Implementing Ranges and Slices in Python Lists'
+section_space9 = f'{section_title9}--------------------------------------------'
+print(section_space9) 
+
+new_tags = [
+  'python',
+  'development',
+  'tutorials',
+  'code',
+  'programming',
+  'computer science'
+]
+
+new_tag_range = new_tags[:-1:2] #this is interesting. so by adding another colon you introducted a intraval. so lets say you only wanted everyother element in the list you would use 2. if every third you would use 3 and so on. 
+
+print(new_tag_range)
+
+new_tag_range2 = new_tags[::-1] #wow so this is how you would flip an entire list of elements. i think i get it though. by having nothing in the front or the back of the first colon you are taking the whole list into count, then
+# you add another colon but when you add a negitive one after a second colon it will reverse it? the very end is still what looses me but i think i can just at least remember the syntax for it for later. 
+
+print(new_tag_range2)
+
+#now he is saying to try and use a sort function to get the same result so we can see why it wont work but i can already see how. since this is a list of strings it would sort alphanumerically and would not use the index number
+#but instead the value of the element. you could make a new variable that would get the index number and yada yada but then your talking more code then the simple snytax above. 
+
+sorted_tags = new_tags.sort(reverse=True) # note that this will return 'none' since the sort function doesn't return anything. so you cant assign it. if you just put new_tags.sort(reverse=True) and printed that it would have worked. 
+
+print(sorted_tags)
+
+#notes
+"""
+So this was definatly a bit more advanced look in list in python. so we went over the slice functionality of python which is really just a range syntax with a second colon and useing a  intraval or a reverse -1 so take slices out of the
+list. was shown that the sort function doesn't actually return anything and will just change the list. if you try to assign the newly sorted list into a new variable it will return 'none' and that will be it. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title10 = 'Guide to the sorted Function in Python'
+section_space10 = f'{section_title10}--------------------------------------------'
+print(section_space10) 
+
+sale_prices = [
+    100,
+    83,
+    220,
+    40,
+    100,
+    400,
+    10,
+    1,
+    3
+]
+
+sorted_list = sorted(sale_prices) # when using the sorted function you can store the sorted list in another variable. it also doesn't change the original list since you are reassigning the orignial list values to a new variable. 
+
+print(sorted_list)
+print(sale_prices)
+
+reversed_list = sorted(sale_prices, reverse=True) # this will reverse the list simply by passing in a second argument. 
+
+print(reversed_list)
+print(sale_prices)
+
+#notes
+"""
+so this was short but effective. i understand the none return before since it was more of a waring saying you are changing the original list but when you use sorted you can store it in another variable which does not effect
+the original list. very helpful and will probably try to use this one when i can to try and make sure i don't change the list unless that is what i need to do, in which case i can just use the .sort() function like normal. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title11 = 'How to Find the Median of a Python List with an Odd Number of Numbers'
+section_space11 = f'{section_title11}--------------------------------------------'
+print(section_space11) 
