@@ -435,3 +435,55 @@ pretty simple and straight forward. as you can see from the code above that some
 section_title14 = 'Build a Weighted Lottery Function in Python'
 section_space14 = f'{section_title14}--------------------------------------------'
 print(section_space14)
+
+"""
+weights = {
+  'winning' : 1,
+  'break_even' : 2,
+  'lossing' : 3
+}
+
+weighted_lottery(weights)
+"""
+
+#so what i need to build is a function that will take a dictonary and based off the odds in the dictionary return the correct values based off there odds. fun
+
+# def totally_fair_lottery(the_odds):
+
+weights = {
+  'winning' : 23,
+  'you_live' : 51,
+  'taking_an_L' :230,
+}
+
+print(weights)
+
+sum_of_weights = sum(weights.values())
+print(sum_of_weights)
+
+# def test(value_man):
+#   print(value_man)
+
+sure = weights.get('winning')
+
+print(sorted(weights.values())) #will give the numbers sorted from the dictionary
+print(sorted(weights)) #will give me the sorted strings alpha-numerically
+
+new_man = weights.values()
+new_new_man = weights.keys()
+
+print(new_man)
+print(len(new_man))
+print(new_new_man)
+print(len(new_new_man))
+
+"""
+okay so here is some progress. i can get access to either just the numerical vaules and the string values. next step will be to build that into the function in the begining. 
+"""
+
+
+
+
+def totally_fair_lottery(the_odds):
+  dictionary_nums = the_odds.values()
+  dictionary_strings = the_odds.keys()
