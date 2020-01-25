@@ -405,3 +405,33 @@ you would have to put a 0. and step has to atleast have a value of 1. by giving 
 section_title13 = 'How to Add to a List in Python with Both In Place and Copy Processes'
 section_space13 = f'{section_title13}--------------------------------------------'
 print(section_space13)
+
+# we are going to see how we can add and change the list. 
+
+new_tags2 = ['python', 'development', 'tutorials', 'code']
+
+#nope
+"""
+new_tags2[-1] = 'programming' 
+print(new_tags2)
+
+This will only replace the last element will the new string
+
+"""
+
+new_tags2.extend(['programming']) #this will add a new element at the end of the list, but like the sort function doesn't reutrn anything so you cant use it to store in a new variable. 
+print(new_tags2)
+
+brand_new_tags = new_tags2 + ['HTML'] #this is the way you would add a new element to a list while creating a new list. make sure you have it in [] because you can combine a string with a list. 
+print(brand_new_tags)
+
+#notes
+"""
+pretty simple and straight forward. as you can see from the code above that some of it is familiar and some is new but it all make sense
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title14 = 'Build a Weighted Lottery Function in Python'
+section_space14 = f'{section_title14}--------------------------------------------'
+print(section_space14)
