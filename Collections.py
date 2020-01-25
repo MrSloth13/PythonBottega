@@ -381,3 +381,27 @@ tags_seven = [
   'code',
   'programming',
 ]
+
+slice_object = slice(2)
+slice_object2 = slice( 0 , 3 , 1)
+
+
+print(slice_object)
+print(tags[slice_object])
+print(tags[slice_object2])
+print(slice_object2.start)
+print(slice_object2.stop)
+print(slice_object2.step)
+
+#notes
+"""
+so this is a very helpful lesson since one of the main reasons you would the slice function that looks like the a range is if you want to store that slice and be able to call it and use it at a later time or on a different data
+structure. there are also some helper functions that can tell you the slice start, stop, and step. speaking of which the slice function take in three arguments and they all have to be put in. so if you want to start from the begining of the list
+you would have to put a 0. and step has to atleast have a value of 1. by giving it that value it will just return each item in the slice range. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title13 = 'How to Add to a List in Python with Both In Place and Copy Processes'
+section_space13 = f'{section_title13}--------------------------------------------'
+print(section_space13)
