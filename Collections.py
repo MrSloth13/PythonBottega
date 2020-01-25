@@ -312,3 +312,72 @@ the original list. very helpful and will probably try to use this one when i can
 section_title11 = 'How to Find the Median of a Python List with an Odd Number of Numbers'
 section_space11 = f'{section_title11}--------------------------------------------'
 print(section_space11) 
+
+#a median is the middle value in a list of items. 
+
+"""
+Tools:
+-math library
+-sorted function
+-list slicing
+-computations
+"""
+
+sale_prices2 = [
+    100,
+    83,
+    220,
+    40,
+    100,
+    400,
+    10,
+    1,
+    3
+]
+
+import math
+
+#my result
+
+sorted_list2 = sorted(sale_prices2) #sorting the list
+list_length = len(sorted_list2) # getting the lenght for the list. note that this will only work on an odd number of list items and will return nothing if you have an even number in there since it divides by 2
+median_number = sorted_list2[math.floor(list_length/2):-math.floor(list_length/2):math.floor(list_length/2)]
+
+print(sorted_list2)
+print(list_length)
+print(median_number)
+
+#Jordans result
+
+sorted_list = sorted(sale_prices2)
+number_of_sale = len(sorted_list)
+half_slice = math.floor(number_of_sale/2)
+first_sale_items = sorted_list[:half_slice]
+last_sale_items = sorted_list[-half_slice]
+median = sorted_list[half_slice: (half_slice + 1)] # now the way jordan did it will allow this to not error out on an even numbered list. im not sure if it finds the true median but it will return an element thanks to the plus 1. 
+
+print(sorted_list)
+print(number_of_sale)
+print(first_sale_items)
+print(last_sale_items)
+print(median)
+
+#notes
+"""
+so this was challenging but i do understand slicing a bit better and when to call the math library. getting the medain was good practice and pretty straight forward. i don't think i can explain too much i think the code speaks for itself. if my example
+doesn't seems staight forward enough i also put jordans result which wallks through it in much more detail then i did since i just wanted to get it to work. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title12 = 'Working with the slice Class in Python to Store Slices'
+section_space12 = f'{section_title12}--------------------------------------------'
+print(section_space12)
+
+tags_seven = [
+  'python',
+  'development',
+  'tutorials',
+  'code',
+  'programming',
+]
