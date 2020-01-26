@@ -436,8 +436,7 @@ section_title14 = 'Build a Weighted Lottery Function in Python'
 section_space14 = f'{section_title14}--------------------------------------------'
 print(section_space14)
 
-import numpy as np
-from numpy.random import choice
+
 
 """
 weights = {
@@ -453,17 +452,7 @@ weighted_lottery(weights)
 
 # def totally_fair_lottery(the_odds):
 
-weights = {
-  'winning' : 0.1,
-  'you_live' : 0.3,
-  'taking_an_L' : 0.6,
-}
 
-weights2 = {
-  'winning' : 1,
-  'you_live' : 5,
-  'taking_an_L' : 15,
-}
 
 """
 print(weights)
@@ -498,22 +487,6 @@ print(choice(ary_strings, p=ary_ints))
 okay so here is some progress. i can get access to either just the numerical vaules and the string values. next step will be to build that into the function in the begining. 
 """
 
-# test_array = np.array(weights.keys())
-# print(test_array)
-import operator
-
-def totally_fair_lottery(the_odds):
-  dictionary_nums = np.array(the_odds)
-  dictionary_strings = list(the_odds.keys())
-  dictionary_nums_sum = sum(dictionary_nums)
-
-  return choice(dictionary_strings, p=dictionary_nums)
-
-print(totally_fair_lottery(weights))
-
-weights /= sum(weights) 
-print(weights)
-
 """
 sum_test = 23 + 54 + 223
 converting_test = [23/sum_test, 54/sum_test, 223/sum_test]
@@ -522,3 +495,33 @@ print(sum_test)
 print(converting_test)
 print(converting_sum)
 """
+
+import operator
+import numpy as np
+from numpy.random import choice
+
+weights = {
+  'winning' : 0.1,
+  'you_live' : 0.3,
+  'taking_an_L' : 0.6,
+}
+
+weights2 = {
+  'winning' : 23,
+  'you_live' : 54,
+  'taking_an_L' : 223,
+}
+
+def totally_fair_lottery(the_odds):
+  dictionary_nums = list(the_odds.values())
+  dictionary_strings = list(the_odds.keys())
+  dictionary_nums_sum = sum(dictionary_nums)
+  dictionary_nums = [ round(nums / dictionary_nums_sum, 2) for nums in dictionary_nums]
+  print(dictionary_nums)
+
+  return choice(dictionary_strings, p=dictionary_nums)
+
+print(totally_fair_lottery(weights2))
+
+
+
