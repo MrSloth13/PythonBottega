@@ -540,6 +540,8 @@ def weighted_lottery_function(the_weights):
 
 
 print(weighted_lottery_function(weights2))
+print(weighted_lottery_function(weights2))
+print(weighted_lottery_function(weights2))
 
 #notes
 """
