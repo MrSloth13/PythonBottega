@@ -522,6 +522,11 @@ def totally_fair_lottery(the_odds):
   return choice(dictionary_strings, p=dictionary_nums)
 
 print(totally_fair_lottery(weights2))
+print(totally_fair_lottery(weights2))
+print(totally_fair_lottery(weights2))
 
+#okay so i got my version working!!! fucking christ that took days of work and reasearch but i got it in the end. now i have to watch the rest of the video and see how close i was and what other way Jordan did it. 
+
+#Jordans way
 
 
