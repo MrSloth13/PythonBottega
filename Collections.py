@@ -529,4 +529,28 @@ print(totally_fair_lottery(weights2))
 
 #Jordans way
 
+def weighted_lottery_function(the_weights):
+  container_list = []
 
+  for(name, weight) in the_weights.items(): #this will look for the key and value pairs in the, which you can put in () and looping through the dictionary name with the item function which is what will give the first part their return.
+    for _ in range(weight): # this will look at every element in the list at the range of the value the first loop found, then append or add that name to the list. 
+      container_list.append(name)
+
+  return np.random.choice(container_list) #the last part is just using the random.choice function which will pick a random item inside of a list. since you populated the list with a ton of elements in relation to there odds, it will be weighted even at random
+
+
+print(weighted_lottery_function(weights2))
+
+#notes
+"""
+Okay so he did a very different approach and did it almost all manually. the only part that wasn't was the random choice part which i also used numpy's choice funciton but in a totally differnt way. i do think his works better for 
+smaller dictionaries but i think mine might work better with larger ones since mine doesn't need to loop and make a list that contains all the keys as many times as the value is. i do, for the msot part understand how he did it now after seeing it. 
+i definatly made it a bit harder on my self but i got there in the end and i did understand the directions in the first place this time i just struggled with understanding some of the more broad concepts in this project like odd and numpy. 
+like i said i got there in the end but it definatly wasn't easy. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title15 = 'Overview of Python Dictionaries'
+section_space15 = f'{section_title15}--------------------------------------------'
+print(section_space15)
