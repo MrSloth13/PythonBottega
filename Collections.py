@@ -556,3 +556,34 @@ like i said i got there in the end but it definatly wasn't easy.
 section_title15 = 'Overview of Python Dictionaries'
 section_space15 = f'{section_title15}--------------------------------------------'
 print(section_space15)
+
+# in this section we will be over the dictionary data type
+
+# a dictionary is a key, value data structure
+
+players = {
+  "ss" : "Correa",
+  "2b" : "Altuve",
+  "3b" : "Bregman",
+  "DH" : "Gattis",
+  "OF" : "Springer",
+}
+
+second_base = players['2b']
+designated_hitter = players['DH']
+
+print(second_base)
+print(designated_hitter)
+
+#notes
+"""
+Okay so after the last project i better fucking know a good amount about how dictionaries work in python. I did however learn the proper way to call a key  for a value. the syntax is almost exactly like a list, but instead of 
+having somthing like an index you would use words or strings to find the value you want. and you would use a key(string) to find the corrisponding value. the name kinda tells you how it works, at least i feel it does, but it 
+is most definatly not a list. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title16 = 'Guide to Nested Collections in Python Dictionaries'
+section_space16 = f'{section_title16}--------------------------------------------'
+print(section_space16)
