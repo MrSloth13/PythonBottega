@@ -638,9 +638,81 @@ teams3 = {
 }
 
 featured_team = teams3['yankees']
-cool_team = teams3.get('mets', 'No featured team')
+cool_team = teams3.get('mets', 'No featured team') # get takes two arguments. first is the key you want to look up or find, second is what you want to be returned or to be the value of that key if it is not found in said dictionary. 
 real_cool_team = teams3.get('yankees', 'No cool team')
 
 print(teams3)
 print(cool_team)
 print(real_cool_team)
+
+#notes
+"""
+This is really helpful and will probably use this from now on, its also best practice so should do it anyway. so if you try to query a key that you know all is right with the world. now if you try to query a key that does not exist 
+the program will error out. this is good since you dont want to not know that the key doesn't exist but at the same time you dont want an error. so you can use the .get function which takes two arguments. the first is the key you
+want to look and find, the second is what you want it to return or the value incase there isn't one already. so it acts very much like a conditional or if/else statement. so it will look for the key you asked for, if it is found it 
+will return what is actually attached to the key and ignore the second argument in the get function, but if it is not found it will return what you put the second argument in the get function as. very useful. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title19 = 'Guide to Python Dictionary View Objects'
+section_space19 = f'{section_title19}--------------------------------------------'
+print(section_space19)
+
+players4 = {
+  "ss" : "Correa",
+  "2b" : "Altuve",
+  "3b" : "Bregman",
+  "DH" : "Gattis",
+  "OF" : "Springer",
+}
+
+print(players4.keys())
+print(players4.values())
+print(players4.items())
+
+print(list(players4.values())[1])
+
+player_names = list(players4.copy().values()) 
+"""
+this is what you would call 'thread safe'. by making a copy of the dictionary you cut off the dynamically updating thread which could give you a different result if some one is 
+making a change to the list. so you would copy first then take your keys, values, or items.
+"""
+
+print(player_names)
+
+"""
+all three of the functions above are what is called a view object. they provide a dynamic view on the dictionary's entires, which means that when the dictionary changes, the view reflects these changes. so if i am understanding this 
+correctly this means that if we have a variable that we assigned one of these two, it will always keep up to date with the original dictionary. one important thing to note is you can not treat these view objects like normal values. 
+you would have to convert them like i did for the lottery function to be able to interact with the data type you need them to be.  
+"""
+
+teams4 = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angles" : ["Trout", "Pujols"],
+  "yankees" : ["Judge", "Stanton"],
+  "red sox" : ["Price", "Betts"],
+}
+
+team_groupings = teams4.items()
+
+print(list(team_groupings))
+print(list(team_groupings)[1])
+print(list(team_groupings)[1][1])
+print(list(team_groupings)[1][1][0])
+
+#notes
+"""
+So some of this i was a bit ahead on since i used some of it to make my lottery funciton work. some concepts were new and man there was a ton in this long video. so to start what the .key, .value, and .items return is a dictionary 
+view object. which is fancy for saying its a lived updated variable. so if there is a change made it will change the data you are working with. that leads into the concept of 'thread safty' which is the practice of cutting the tread
+or the live updating side of it so your data is static at the time of excicution. the primary way to do this is to convery the view object to a list and then call the .copy function which will make a copy of the dictionary first and 
+then that is what is used for any furuther .key, or .value function you want to throw at it. now if you want to access collections nested inside of the dictionary you would first need to convert the view object into a list again, then
+you can just treat it like a list. you would call an index in []. you would then just follow down the line if you would want to go deeper by just putting another pair of [] right after the last one. so i was very right to convert the 
+view objects in my lottery function over to a list to be able to work with them like a list. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title20 = 'Overview of the Multiple Methods for Deleting Items in a Python Dictionary'
+section_space20 = f'{section_title20}--------------------------------------------'
+print(section_space20)
