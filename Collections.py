@@ -587,3 +587,30 @@ is most definatly not a list.
 section_title16 = 'Guide to Nested Collections in Python Dictionaries'
 section_space16 = f'{section_title16}--------------------------------------------'
 print(section_space16)
+
+teams = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angles" : ["Trout", "Pujols",],
+  "yankees" : ["Judge", "Stanton"],
+}
+
+yankees_team_list = teams['yankees']
+
+print(teams['astros'][0:2])
+print(teams['yankees'][1])
+print(teams['angles'][:])
+print(yankees_team_list)
+
+#notes
+"""
+so this was cool and i was even able to predict how some of the syntax would work for it. so the keys have to be a string to there really is no changing that but the value can be any data type that you want it to be. in this case 
+we made the data type a list. now when you call the list you would just call the dictionary and pass in the key for the value you want. the really nice part is after you close out with the last ] you can treat it like any other list. 
+so if you wanted to grab a slice of the list you could just put [:3] after and it will slice the value that is returned. this goes for any functions you want or can call on a list type. and like normal you can also store the value
+in an another variable. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title17 = 'Guide to Nested Collections in Python Dictionaries'
+section_space17 = f'{section_title17}--------------------------------------------'
+print(section_space17)
