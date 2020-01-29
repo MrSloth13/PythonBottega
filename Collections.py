@@ -611,6 +611,36 @@ in an another variable.
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title17 = 'Guide to Nested Collections in Python Dictionaries'
+section_title17 = 'How to Add New Key/Value Pairs to Python Dictionaries'
 section_space17 = f'{section_title17}--------------------------------------------'
 print(section_space17)
+
+teams2 = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angles" : ["Trout", "Pujols",],
+  "yankees" : ["Judge", "Stanton"],
+}
+
+teams2['red sox'] = ['Price', 'Betts'] # this is the syntax for adding a new key/value pair. pretty straight forward
+
+print(teams2)
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title18 = 'Guide to Using the get Function in Python Dictionaries to Configure Fallback Lookup Values'
+section_space18 = f'{section_title18}--------------------------------------------'
+print(section_space18)
+
+teams3 = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angles" : ["Trout", "Pujols"],
+  "yankees" : ["Judge", "Stanton"],
+}
+
+featured_team = teams3['yankees']
+cool_team = teams3.get('mets', 'No featured team')
+real_cool_team = teams3.get('yankees', 'No cool team')
+
+print(teams3)
+print(cool_team)
+print(real_cool_team)
