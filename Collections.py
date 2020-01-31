@@ -716,3 +716,33 @@ view objects in my lottery function over to a list to be able to work with them 
 section_title20 = 'Overview of the Multiple Methods for Deleting Items in a Python Dictionary'
 section_space20 = f'{section_title20}--------------------------------------------'
 print(section_space20)
+
+teams5 = {
+  "astros" : ["Altuve", "Correa", "Bregman"],
+  "angles" : ["Trout", "Pujols"],
+  "yankees" : ["Judge", "Stanton"],
+  "red sox" : ["Price", "Betts"],
+}
+
+del teams5['astros'] #this is the first way you can delete an item from a dictionary. you would call del then the name of the dictionary, then pass in the key you would want to delete. this will delete the values as well. 
+"""
+note that the above example will error out if there is not a key in the dictionary that you want to delete. and no you cant use the get function on it to get around it like we did for looking up a key.
+"""
+
+teams5.pop('yankees', 'There is no key here') #this works just like the get function but will delete a key/value pair in a dictionary.
+removed_team = teams5.pop('mets', 'there is no key here') #the one trick to pop is it will return a value so if you just call the dictionary it will just return in, you will have to assign it to a value to see it. 
+
+print(teams5)
+print(removed_team)
+
+#notes
+"""
+So here are two ways to delete items from a dictionary. now del is short and sweet but you have to know for a 100% certainty that you know what you want to delete. if not then you can do the slighlty longer version
+with pop and that way it doesn't error out. reallistically i will probably be using both depending on weather i know what will be deleted or not. other then that this was a short and nice video. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title21 = 'Guide to Working with Lists of Nested Dictionaries'
+section_space21 = f'{section_title21}--------------------------------------------'
+print(section_space21)
