@@ -340,7 +340,7 @@ name_three = 'Bob'
 age = 12
 product = 'Python eLearning Course'
 
-greeting_two = "Hi {0}, you are listed as {1} years old and you have purchased: {2}...".format(name, age, product)
+greeting_two = "Hi {0}, you are listed as {1} years old and you have purchased: {2}...".format(name_three, age, product)
 
 print(greeting_two)
 

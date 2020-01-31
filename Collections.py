@@ -782,3 +782,67 @@ with his approach.
 section_title22 = 'Build a Histogram in Python with No 3rd Party Libraries'
 section_space22 = f'{section_title22}--------------------------------------------'
 print(section_space22)
+
+#a histogram is it's a type of chart used in statistics and machine learning that allows you to see patterns and basic types of trends with data.
+
+"""
+g $$$$$$$$$$$$$$$$$$$$
+f $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+t $$$$$$$$$$
+o $$$$$$$$$$$$
+
+g = google
+f = facebook
+t = twitter
+o = offline
+
+$ = sales
+"""
+
+sales_figures = {
+  'Google' : f'g {20 * "$"}', #this is very cool. so you cant do something like 4 + 'w' but you can do 4 * 'w' and it will just replicate the string for how ever times you multiplied it by.
+  'Facebook' :f'f {42 * "$"}',
+  'Twitter' :f't {10 * "$"}',
+  'Offline' :f'o {12 * "$"}',
+}
+
+print(sales_figures['Google'])
+print(sales_figures['Facebook'])
+print(sales_figures['Twitter'])
+print(sales_figures['Offline'])
+
+print(list(sales_figures.values()))
+
+
+"""
+g $$$$$$$$$$$$$$$$$$$$
+f $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+t $$$$$$$$$$
+o $$$$$$$$$$$$
+"""
+
+#jordans result
+
+jordan_sales = {
+  'google': 20,
+  'facebook': 42,
+  'twitter': 10,
+  'offline': 12,
+}
+
+print('g ' + jordan_sales['google'] * '$')
+print('f ' + jordan_sales['facebook'] * '$')
+print('t ' + jordan_sales['twitter'] * '$')
+print('o ' + jordan_sales['offline'] * '$')
+
+#notes
+"""
+So im not sure if i did it wrong or if i did it really right lol. so i put the string interpolation in the dictionary itself while jordan did it in the print statement. it wasn't clear if it was 
+suppose to be in one of the other so i only did it the way i first though of and ran into no errors. so yay me i think. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title23 = 'Introduction to Python Tuples'
+section_space23 = f'{section_title23}--------------------------------------------'
+print(section_space23)
