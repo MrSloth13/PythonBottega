@@ -746,3 +746,39 @@ with pop and that way it doesn't error out. reallistically i will probably be us
 section_title21 = 'Guide to Working with Lists of Nested Dictionaries'
 section_space21 = f'{section_title21}--------------------------------------------'
 print(section_space21)
+
+new_teams_list = [
+  {
+    "astros" : {
+      "2B" : "Altuve",
+      "SS" : "Correa",
+      "3B" : "Bregman",
+    }
+  },
+  {
+    "Angles" : {
+      "HF" : "Trout",
+      "DH" : "Pujols",
+    }
+  },
+]
+
+print(new_teams_list)
+
+print(new_teams_list[1].get('Angles', 'no team').get('DH', 'no team')) #this is one way to get down to the data you want. simply by going through each one and just doing what i would normally do to grab the data i want.
+
+team_angles = new_teams_list[1].get('Angles', 'no team') #this is another way combined with the print statment below. both would work but my first one can be quite a long horizontal line while jordans would be more vertical
+
+print(list(team_angles.values())[1])
+
+#notes
+"""
+So i definalty was able to guess a way to get to the same data as jordan demonstrated but i can also see how good his way it. mine is a very blunt force way of doing it while i feel jordans has a better scalability
+with his approach. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title22 = 'Build a Histogram in Python with No 3rd Party Libraries'
+section_space22 = f'{section_title22}--------------------------------------------'
+print(section_space22)
