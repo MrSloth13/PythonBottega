@@ -874,3 +874,26 @@ which would cause you to unpack a second time which should account for the chang
 section_title24 = 'How to Add Elements to a Tuple by Leveraging Re-Assignment'
 section_space24 = f'{section_title24}--------------------------------------------'
 print(section_space24)
+
+post2 = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+
+print(id(post2))
+
+post2 = post2 + ('Published',) # it is very important to add a comma at the end so python knows its a tuple, otherwise it will treat it like a string
+post2 += ('Deleted',)
+
+print(post2)
+print(id(post2))
+
+#notes
+"""
+So Tuples are quite a bit like string due to there immutablilty. one thing to keep note of is when you are adding an single element or mulitple you need to end the list of items with a comma just before you close out the (). this 
+way python know that you are adding a tuple and not trying to add a bunch of strings. one really cool thing he showed is the id function. this will give you the unique identifier number for the location of that data on RAM or harddrive
+space. you can see if you reassign a value it will get a new id but the original one is still the same. you are just performing an override for any later use of that variable name. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title25 = 'Working with Lists Nested in Tuples'
+section_space25 = f'{section_title25}--------------------------------------------'
+print(section_space25)
