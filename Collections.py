@@ -846,3 +846,31 @@ suppose to be in one of the other so i only did it the way i first though of and
 section_title23 = 'Introduction to Python Tuples'
 section_space23 = f'{section_title23}--------------------------------------------'
 print(section_space23)
+
+#now on to the last one. tuples. very similar to list.
+
+# List: []
+# Dictionary: {}
+# Tuple: ()
+
+post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+
+title, sub_heading, content = post #this is 'unpacking'
+
+print(sub_heading)
+
+# Tuple: immutable
+# List: mutable
+
+#notes
+"""
+So from what i can see, besides the obvious syntax, the main difference is that like a string a tuple is immutable. so this means you cannot change the original tuple. where as a list can be changed. for example if you were to unpack
+a list it would work at first. but if the order of the list or an extra item is added, it will change the unpacking which can really mess things up. where as if it was a tuple, it could not be changed so it would have to be reassigned 
+which would cause you to unpack a second time which should account for the changes. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title24 = 'How to Add Elements to a Tuple by Leveraging Re-Assignment'
+section_space24 = f'{section_title24}--------------------------------------------'
+print(section_space24)
