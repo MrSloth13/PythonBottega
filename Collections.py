@@ -897,3 +897,25 @@ space. you can see if you reassign a value it will get a new id but the original
 section_title25 = 'Working with Lists Nested in Tuples'
 section_space25 = f'{section_title25}--------------------------------------------'
 print(section_space25)
+
+post3 = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+
+post3 += (['Thomas', 'Betty', 'Jordan'], 'Mountains', 'Tuna',)
+
+print(post3)
+
+the_top, the_middle, the_end, the_class, extras, last = post3
+
+print(the_class[1])
+print(last)
+
+#notes
+"""
+So this is very straight forward. honestly
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title26 = 'Guide to Slices in Python Tuples'
+section_space26 = f'{section_title26}--------------------------------------------'
+print(section_space26)
