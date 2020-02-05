@@ -940,3 +940,40 @@ into a list.
 section_title27 = 'Three Ways to Remove Elements from a Python Tuple'
 section_space27 = f'{section_title27}--------------------------------------------'
 print(section_space27)
+
+post5 = ('Python Basics', 'Intro guide to python', 'Some cool python content', 'published')
+
+print(post5)
+
+#so one important thing to remember is that we are not 'deleting' anything from the origninal tuple. just like adding we will be making a new tuple but taking items out of it. 
+
+#first method (removing from the end)
+post5 = post5[:-1]
+
+print(post5)
+
+#method two (removing from the begining)
+
+post5 = post5[1:]
+
+print(post5)
+
+# last method ( removing from the beginning. now this is technically a hack/ not reccomended. )
+post5 = list(post5)
+post5.remove('Some cool python content')
+post5 = tuple(post5)
+
+print(post5)
+
+#notes
+"""
+Okay so this was good. it makes a ton of sense givin the immutable nature of tuples. so really you would just reassign it to a range of items you want to keep in that tuple. simple. now as far as taking anyone out is something i
+would have done lol. so you would just convert the tuple into a list, then use the remove function for the item you want, then reconvert the list into a tuple and bam you did it. jordan did bring up a good point that if you need
+to keep changing the tuple, maybe you should just use a list since that is why they are there. i think it just drove home the point that tuple are really just needed when you need immutablity on something that could be a list. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title28 = 'How to Use a Tuple as a Dictionary Key in Python'
+section_space28 = f'{section_title28}--------------------------------------------'
+print(section_space28)
