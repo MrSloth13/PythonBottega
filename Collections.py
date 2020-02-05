@@ -919,3 +919,24 @@ So this is very straight forward. honestly
 section_title26 = 'Guide to Slices in Python Tuples'
 section_space26 = f'{section_title26}--------------------------------------------'
 print(section_space26)
+
+post4 = ('Python Basics', 'Intro guide to python', 'Some cool python content', 'published')
+
+print(post4)
+
+post4_slice = post4[:2]
+
+print(post4_slice)
+
+#notes
+"""
+Okay so this is a very short lesson and for a decent reason. so slice a tuple is practically identical to a list. even down to the syntax since tuples operate on an index system anyway. the one thing that i think is important
+is that it returns a tuple. i mean that makes sense but i think it is something that can be taken for granted especially if i get use to list and expect a list when i will get a tuple back. this is not a way to convert a tuple
+into a list. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title27 = 'Three Ways to Remove Elements from a Python Tuple'
+section_space27 = f'{section_title27}--------------------------------------------'
+print(section_space27)
