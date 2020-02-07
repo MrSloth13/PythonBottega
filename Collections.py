@@ -1019,3 +1019,32 @@ tuple to by the index 0, then 1, then 2 of each list paired together which is al
 section_title30 = "Introduction to the Python Set Data Structure"
 section_space30 = f'{section_title30}--------------------------------------------'
 print(section_space30)
+
+#this is the last data type we will be going over for collections.
+
+set_tags = {
+  "python",
+  "coding",
+  "tutorials"
+}
+
+print(set_tags)
+
+# one of the main features of a set is every element has to be unique. if there is a duplicate then it will ignore all but one. 
+
+query_one = 'python' in set_tags
+
+print(query_one)
+
+#notes
+"""
+So i can see why he saved the set for last. it is probably the most non-usful data structure out of them all. i mean i'm sure there is a time and a place to use it but man does it seem like it will be rare. and bet that since i said
+this that i will use sets all the time. like i stated above the main point of a set is garenteed quniqness of each element inside. the only problem is you dont have all the functionality of a list so there is no indexing, there is no
+get function, (there is pop though) and there is no key so trying to get a returned item seems like its impossible. you can check to see if an element is in there by the syntax above. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title31 = "Various Methods for Merging Python Sets"
+section_space31 = f'{section_title31}--------------------------------------------'
+print(section_space31)
