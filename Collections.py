@@ -997,3 +997,25 @@ goes as far as what else you could use. i might want to play around with that on
 section_title29 = "Guide to Python's Zip Function"
 section_space29 = f'{section_title29}--------------------------------------------'
 print(section_space29)
+
+#this is a core python function. 
+#this is a way to combine list into a tuple. 
+
+positions = ['2b', '3b', 'SS', 'DH']
+team_players = ['Altuve', 'Bregman', 'Correa', 'Gattis']
+
+scoreboard = zip(positions, team_players) #this is where you can do it a direct where that means that index 0 is going to get merged with the other index 0. 
+
+print(list(scoreboard))
+
+#notes
+"""
+This looks super cool. and i can see why its used in machine learing a ton since by combineing two things you are technically generating content. and it being called zip is very appopreate. since it will just turn the first
+tuple to by the index 0, then 1, then 2 of each list paired together which is also why it makes sense to call it a zipper. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title30 = "Introduction to the Python Set Data Structure"
+section_space30 = f'{section_title30}--------------------------------------------'
+print(section_space30)
