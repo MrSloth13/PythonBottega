@@ -977,3 +977,23 @@ to keep changing the tuple, maybe you should just use a list since that is why t
 section_title28 = 'How to Use a Tuple as a Dictionary Key in Python'
 section_space28 = f'{section_title28}--------------------------------------------'
 print(section_space28)
+
+priority_index = {
+  (1, 'preimer') : [1,34,12],
+  (1, 'mvp') : [12,37,54],
+  (2, 'standard') : [89,84,3],
+}
+
+print(list(priority_index.keys()))
+
+#notes
+"""
+Okay so i guess i get how to do it i still just dont see why it would be used but that should be besides the point. the really interesting thing i learned was that a dictionary key doesn't have to be a string. i am not sure how far that 
+goes as far as what else you could use. i might want to play around with that one and see what else i could use since i clearly am not limited to just strings. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title29 = "Guide to Python's Zip Function"
+section_space29 = f'{section_title29}--------------------------------------------'
+print(section_space29)
