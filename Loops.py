@@ -92,3 +92,39 @@ other iteration. if you put 3 it will skip 2 before excicuting on an iteration. 
 section_title5 = "Guide to Continue and Break in Python Loops"
 section_space5 = f'{section_title5}--------------------------------------------'
 print(section_space5)
+
+usersnames = [
+    'jon',
+    'tyrion',
+    'theon',
+    'cersei',
+    'sansa',
+]
+
+#Continue / Break (the two flow operators for this guide)
+
+for username in usersnames:
+    if username == 'cersei':
+        print(f'Sorry, {username}, you are not allowed')
+        continue
+    else:
+        print(f'{username} is allowed')
+
+for username in usersnames:
+    if username == 'theon':
+        print(f'{username} was found at index {usersnames.index(username)}')
+        break
+    print(username)
+
+#notes
+"""
+This was a very helpful video. especially since i was just talking about not understanding how conditional works in loops and this video helped so much. explaining it is a bit hard but in short you need to give continue or a 
+break statment in order to tell the loop what to do when it hits the conditional. if you put continue you need to provide an else statment, if you say break the next line or lines will be what runs otherwise or just an else
+statment with out saying else. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title6 = "Overview of While Loops in Python"
+section_space6 = f'{section_title6}--------------------------------------------'
+print(section_space6)
