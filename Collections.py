@@ -1048,3 +1048,47 @@ get function, (there is pop though) and there is no key so trying to get a retur
 section_title31 = "Various Methods for Merging Python Sets"
 section_space31 = f'{section_title31}--------------------------------------------'
 print(section_space31)
+
+tags_ten = {
+  'python',
+  'coding',
+  'tutorials',
+  'coding'
+}
+
+tags_eleven = {
+  'ruby',
+  'coding',
+  'tutorials',
+  'develpment'
+}
+
+#since sets are very low level when it comes to functionality normal functions don't work with it. so what we are about to do is all really about what one set can do with another. 
+
+# Merged
+merged_tags = tags_ten | tags_eleven
+
+print(merged_tags)
+
+# Tags in tags_ten but not in tags_eleven
+exclusive_to_tag_one = tags_ten - tags_eleven #this can be flipped as well.
+
+print(exclusive_to_tag_one)
+
+# Tags found in both tags_ten and tags_eleven
+shared_tags = tags_ten & tags_eleven
+
+print(shared_tags)
+
+#notes
+"""
+This video made sets make more sense to use. i also see that if you wanted to do any functions on a set you need to do a list or tuple conversion. and the only 'function' like things you can do to a set is almost an operator
+to them. like to merge you would use the | character, to see what elements are in one set and not the other with a -, and see elements in both sets with the & charcter. and i also know for sure now that the | is called a pipe. 
+so happy i was able to figure that out. i was wondering for so long. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title32 = "Build an HTML Heading Generator Function in Python"
+section_space32 = f'{section_title32}--------------------------------------------'
+print(section_space32)
