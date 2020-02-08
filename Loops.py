@@ -69,3 +69,26 @@ okay so this was a short video and i was able to work ahead to the end before he
 section_title4 = "Guide to Looping Over Ranges in Python"
 section_space4 = f'{section_title4}--------------------------------------------'
 print(section_space4)
+
+for num in range(1, 10):
+    print(num)
+
+
+for the_num in range(1, 11, 2):
+    print(the_num)
+
+#notes
+"""
+This is interesting. and in playing around trying to get a conditional to work i realize i must be missing something with conditionals because i was not able to get it working. for ranges though i get them a bit more
+but they are still just a bit fuzzy. the best way i can desribe them is like a range when you are slicing a list. it is probably important to note that the range function only takes in ints from what i can see. so this
+only makes it more inline with the slice from list. the biggest thing they have in common though is that the end of the range will return the value up till that point which is a long way of saying that if you put the max
+end of the range to 10 it will stop at 9. since the range will end right before 10 since that is the max. you would have to go one more number greater to get 10 iterations. and for a for in loop range that is all you are 
+really doing with range. you are saying how many time the loop will run for. you can add a third argument which is also like slice where it will basically be saying, if you put a 2 as the third variable it will skip every 
+other iteration. if you put 3 it will skip 2 before excicuting on an iteration. i think i have a better grasp then i thought i did after explaining it but i should still look into it. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title5 = "Guide to Continue and Break in Python Loops"
+section_space5 = f'{section_title5}--------------------------------------------'
+print(section_space5)
