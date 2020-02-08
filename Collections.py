@@ -1092,3 +1092,29 @@ so happy i was able to figure that out. i was wondering for so long.
 section_title32 = "Build an HTML Heading Generator Function in Python"
 section_space32 = f'{section_title32}--------------------------------------------'
 print(section_space32)
+
+"""
+heading_generator(title, heading_type)
+heading_generator('Greeating', '1')
+"""
+
+def heading_generator(title, heading_type):
+
+  return f'<h{heading_type}>{title}</h{heading_type}>'
+
+ 
+print(heading_generator('Hello', '2'))
+
+#notes
+"""
+Alright so even jordan said it that this was going to be the most straight forward project and he was not kidding. me and him acutally came to the same result and i got it done in about 3 minutes. two lines if you count the 
+call of the function itself. i just need to remeber to start string interpolation its f then the start of the string with ' or " and then any variable i want to pass in is in the {}. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title33 = "Introduction to Python Loops"
+section_space33 = f'{section_title33}--------------------------------------------'
+print(section_space33)
+
+#Starting a new file for loops.
