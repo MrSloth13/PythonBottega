@@ -50,6 +50,22 @@ you call the .items() function at the end of the dicionary name.
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title3 = "How to Implement Python Loops for Lists, Tuples, and Dictionaries"
+section_title3 = "How to Loop Through the Characters of a Python String"
 section_space3 = f'{section_title3}--------------------------------------------'
 print(section_space3)
+
+alphabet = 'abcdef'
+
+for letter in alphabet:
+    print(letter)
+
+#notes
+"""
+okay so this was a short video and i was able to work ahead to the end before he was half way done lol. i think i am understaning the for in loops much better now. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title4 = "Guide to Looping Over Ranges in Python"
+section_space4 = f'{section_title4}--------------------------------------------'
+print(section_space4)
