@@ -128,3 +128,43 @@ statment with out saying else.
 section_title6 = "Overview of While Loops in Python"
 section_space6 = f'{section_title6}--------------------------------------------'
 print(section_space6)
+
+#now to learn about the while loop.
+
+"""
+The key difference between the two is a for in loop you have a clearly defined start and end. now a while loop will not stop at the end of the list. it has to be told when it is to stop. the stoping point is called the 
+sentinal value. 
+"""
+
+nums = list(range(1,100))
+
+# while len(nums) > 0:
+#     print(nums.pop())
+
+# You can see from the example above that you gave a conditional and when that conditional becomes false the loop will stop. 
+
+def guess_who():
+    while True:
+        print('What is your guess?')
+        guess = input()
+
+        if guess == '42':
+            print('You correctly guessed it!')
+            return False
+        else:
+            print(f'No, {guess} is not the answer, please try again\n')
+
+guess_who()
+
+#notes
+"""
+This was one of my favorites so far. i can fully see why you would use a while loop and i even learned how to get input from the console so now i can make that guessing number game from C# into python. now for
+while loops i seen a neat thing which is where you just call while True: and the loop will run until something turns it to false. now normally you would just do it with a conditional and when the conditional is 
+met you return False. and as the side note on console interaction you can just put input() and the console will wait for a response. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = "Overview of While Loops in Python"
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
