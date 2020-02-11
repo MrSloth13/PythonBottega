@@ -154,7 +154,7 @@ def guess_who():
         else:
             print(f'No, {guess} is not the answer, please try again\n')
 
-guess_who()
+# guess_who()
 
 #notes
 """
@@ -165,6 +165,16 @@ met you return False. and as the side note on console interaction you can just p
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title7 = "Overview of While Loops in Python"
+section_title7 = "How to Combine and Flatten Lists in Python with the For / In Loop"
 section_space7 = f'{section_title7}--------------------------------------------'
 print(section_space7)
+
+#We are going to see how we can use the for in loop to merge multiple list.
+
+legacy_customers = ['Alice', 'Bob']
+new_customers = ['Tiffany', 'Kristine']
+
+for legacy_customer in legacy_customers:
+    new_customers.append(legacy_customer)
+
+print(new_customers)
