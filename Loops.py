@@ -178,3 +178,50 @@ for legacy_customer in legacy_customers:
     new_customers.append(legacy_customer)
 
 print(new_customers)
+
+#notes
+"""
+So this is pretty simple but still very powerful. and it is very good at reinforcing what a for in loop is good for. i  don't think there is much to say here though since i think the code is pretty self explanitory.
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = "Introduction to Using List Comprehension in Python"
+section_space8 = f'{section_title8}--------------------------------------------'
+print(section_space8)
+
+#!!!This will be hard!!!
+
+#list comrehension is we can set up a number of for in loops to function on a single line and generate list from those lines of code. 
+
+nums_list = range(1,11)
+# cubed_nums = []
+
+""" This is how it would look if you did it the long way
+
+for num in nums_list:
+    cubed_nums.append(num ** 3)
+
+print(cubed_nums)
+print(list(nums_list))
+"""
+
+cubed_nums = [num ** 3 for num in nums_list] #the way its layed out is the action you want to perfor or what would be in the code block would be first as the action. then you would put from what i can see to be
+#normal for in loop syntax. i'm sure this gets way crazier then this but still really cool. do note though that having it all in the [] is what tells python to be generating a list while this loop is going. 
+
+print(cubed_nums)
+
+even_list = [num for num in nums_list if num % 2 == 0] #the first element is the one that gets returned. then you would do the normal for in syntax. then you call the conditional. 
+print(even_list)
+
+#notes
+"""
+Wow so not only was this not as hard as i though, its something i used to get the lottery funciton working. so the way these work is you want to generate a list. so you would make a new list variable and make an empty []. 
+inside of that you would start with what you want to get returned, or the action you could say. think of it as the the last bit in the code block of a for in loop that is doing exactyly what you want to do here. after that
+you would put what you would normally do to start a for in loop. like for num in nums_list. and bam it will generate a list off of that. now if you want to add a conditional into the mix you would just put the normal 
+conditional syntax like "if nums = 4" and put it at the end. really that simple. i guess i can see how for some that might be a challenging concept but i think it is actually pretty straight forward. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#The next section is conditionals so this is the end of the line for loops as of right now. it was a very interesting ride i will say. 
