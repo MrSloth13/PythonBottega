@@ -3,9 +3,9 @@ og_guess_min = 1
 og_guess = 500
 
 def Game_Start():
-    global og_guess_max
-    global og_guess_min
-    global og_guess
+    global og_guess_max 
+    global og_guess_min 
+    global og_guess 
     print('===============================')
     print('Welcome to Number Wizard')
     print('Pick a number in your head, but don\'t say it outloud (I\'m listening)')
@@ -67,10 +67,14 @@ def Game_Start():
             return True
 
     def Restart(response):
+        global og_guess_max
+        global og_guess_min
         global og_guess
         response
 
         if response == 'y':
+            og_guess_max = 1000
+            og_guess_min = 1
             og_guess = 500
             Game_Start()
         else:
