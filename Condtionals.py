@@ -131,3 +131,50 @@ else statements and everything that you would normally do when working with cond
 section_title6 = 'How to Build Compound Conditionals in Python'
 section_space6 = f'{section_title6}--------------------------------------------'
 print(section_space6)
+
+username2 = 'jonsnow'
+email = 'jon@snow.com'
+password = 'thenorth'
+
+if username2 == 'jonsnow' and password == 'thenorth':
+    print('Access permitted')
+else:
+    print('Get outta here')
+
+if username2 == 'jonsnow':
+    if password == 'thenorth':
+        print('you good')
+    else:
+        print('its a no go homie')
+
+if username2 == 'jonsnow' or password == 'thenorth':
+    print('thats the right answer')
+else:
+    print('you still aint getting in')
+
+if (username2 == 'jonsnow' or email == 'jon@snow.com') and password == 'thenorth':
+    print('site persission granted')
+else:
+    print('haha no')
+
+logged_in = True
+standard_user = True
+if logged_in and not standard_user:
+    print('you can access the admin dashboard')
+else:
+    print('you can only access the standard dashboard')
+
+#notes
+"""
+oh man this section is really good. so python is very good as nesting conditionals. and to do so is very simple. you just need to know the operators that you can use and they kinda explain themselfs. to start
+there is the 'and' operator which will allow you to add two if statements and BOTH will have to return true. then there is the 'or' operator which will only require one of the two if statements are true. now 
+it is important to note that from what i can see you can chain these together pretty well. the last operator that we went over it the 'and not' operator. this one is the weird one where you are checking if the 
+left half of the 'and not' statment is true while the right side has to return false. explaining it makes it sound confusing but its really simple. you would just require one of the two if statements to be true
+while the other one has to be false for the WHOLE conditional to be true. its almost like you were just checking with the != on the right half and a false reutrn is what you want. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = 'Remove the First and Last Element from a Python List'
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
