@@ -100,3 +100,34 @@ as its data type mingling i guess you could say. still a good video though.
 section_title5 = 'How to Check if a Value is Included in a Python String or List'
 section_space5 = f'{section_title5}--------------------------------------------'
 print(section_space5)
+
+#conditionals in python also can check to see if a value is in a string or list. 
+
+sentence = 'The quick brown fox jumped over the lazy Dog'
+
+word = 'dog'
+
+if word.lower() in sentence.lower():
+    print('The word was found in the sentence')
+else:
+    print('The word was not found in the sentence')
+
+nums = [1, 2, 3, 4]
+
+if 3 in nums:
+    print('The number was found')
+else:
+    print('The number was not found')
+
+#notes
+"""
+This is really cool and is not something that i have experience with in C#. and i also like the way it reads. its very literal. so the way it works is simple and kinda a loop conditional hybrid syntax. you would start with
+if then what you want to check is in the string or list, then put 'in' and then the string or list you want to check. then put the : at the end and put in your code block. and since this is a conditional you can still use the 
+else statements and everything that you would normally do when working with conditionals. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title6 = 'How to Build Compound Conditionals in Python'
+section_space6 = f'{section_title6}--------------------------------------------'
+print(section_space6)
