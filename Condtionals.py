@@ -60,3 +60,43 @@ like if 2 == 2, then you put else, then what you would want to happen if the con
 section_title4 = 'Full List of Python Conditional Operators'
 section_space4 = f'{section_title4}--------------------------------------------'
 print(section_space4)
+
+#what he means by operator is what you can put in a conditional to check values. 
+
+# List of comparision operators
+# == Equality
+# != Inequality
+# <> Inequality (deprecated) this is no longer used and has been replaced by != so just know if you run into this looking at someone else's code you can know what it is. 
+# > Greater than
+# >= Greater then or equal to
+# < Less than
+# <= Less than or equal to
+
+username = 'jonsnow'
+
+if username != 'jonsnow':
+    print('welcome!')
+else:
+    print('You shall not pass')
+
+
+user_list = ['Kristine', 'Tiffany']
+second_list = ['Jordan', 'Braydan']
+
+if user_list == second_list:
+    print('They match!')
+else:
+    print('These are very different sir')
+    
+
+#notes
+"""
+So this was nice. i knew most of them since they are identical to C# operators. the one differnce is in C# you could not perform a > or < on a string. it would throw an error since it is much more strict as far
+as its data type mingling i guess you could say. still a good video though. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title5 = 'How to Check if a Value is Included in a Python String or List'
+section_space5 = f'{section_title5}--------------------------------------------'
+print(section_space5)
