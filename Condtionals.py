@@ -178,3 +178,46 @@ while the other one has to be false for the WHOLE conditional to be true. its al
 section_title7 = 'Remove the First and Last Element from a Python List'
 section_space7 = f'{section_title7}--------------------------------------------'
 print(section_space7)
+
+test_list = ['hello', 'we need to', 'clean this list', 'up', 'now', 'billy', 'jean', 'man this is', 'a', 'long list']
+
+def remove_first_and_last(list_to_clean):
+    return list_to_clean[1:-1]
+
+print(remove_first_and_last(test_list))
+print(test_list)
+
+#Jordans solution
+
+def remove_first_and_last2(list_to_clean2):
+    _, *content, _ = list_to_clean2
+    return content
+
+print(remove_first_and_last2(test_list))
+print(test_list)
+
+#extra challenge
+
+def list_cleaning(dirty_list):
+    if len(dirty_list) > 3:
+        _ , *clean_list, _ = dirty_list
+        return clean_list
+    else:
+        print('There is not enough elements to clean list. Three minimum')
+
+print(list_cleaning(test_list))
+print(test_list)
+
+#notes
+"""
+Well goddamn lol. i feel like i know a bit more then i should for this lesson. i was able to get the build done right away in a completely different way then jordan but the way he did it used a concept we haven't touched
+on too much yet which is glumping items together. we have gone over the fact that you can assing values to list elements by listing out the names of the variables you want and assigning them to the list and the elements 
+will be assigned off index values. now if you put a '*' infront of one of them they will bunch all the remaining elements into that one variable which is how jordan got his result. then he added an extra little challenge 
+to add a conditional to the mix to make sure the list had 3 or more elements. was also not very hard. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = 'Remove the First and Last Element from a Python List'
+section_space8 = f'{section_title8}--------------------------------------------'
+print(section_space8)
