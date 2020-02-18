@@ -38,7 +38,7 @@ auth('jelly@email.com', 'secret')
 
 
 def hundred():
-    for num in range(1,101):
+    for num in range(1,21):
         print(num)
 
 hundred()
@@ -57,3 +57,31 @@ basic functions on python.
 section_title3 = 'What Does it Mean to Return a Value from a Python Function?'
 section_space3 = f'{section_title3}--------------------------------------------'
 print(section_space3)
+
+"""
+Before i start the video i wanted to try and guess the answer myself. i would assume what it means to return a value from a function is to have it give you something back. as in
+if you are performing a calculation you would want the end result of the inputs and proccess to be what is returned seeing as you wouldn't really care about all the rest of it if 
+you just need the result of the calculation. could be totally wrong here but just wanted to guess to see how right i am. 
+"""
+
+def full_name2(first, last):
+    return f'{first} {last}'
+
+
+jon = full_name2('jon', 'Billingfort')
+
+print(jon)
+
+
+#notes
+"""
+So i was right i suppose. the real point of the video was to explain the difference between using the print statement vs the return statment in a function and why you wont really (or should) 
+use the print statment unless you are debugging in the real world. when you call a print statment the only place that it goes in to the console which isn't very useful in a normal program. but
+if you use the return statment, nothing will show in the console but the value you called to be returned will be passed onto any other function or method that needs it. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title4 = 'What Does it Mean to Return a Value from a Python Function?'
+section_space4 = f'{section_title4}--------------------------------------------'
+print(section_space4)
