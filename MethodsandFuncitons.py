@@ -82,6 +82,31 @@ if you use the return statment, nothing will show in the console but the value y
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title4 = 'What Does it Mean to Return a Value from a Python Function?'
+section_title4 = 'How to Nest Functions in Parent Functions in Python'
 section_space4 = f'{section_title4}--------------------------------------------'
 print(section_space4)
+
+# this should be a good video. i understand how to nest functions in a function but the parent call out makes me think that i don't know it all though. 
+
+def greeting(first, last):
+    def full_name3():
+        return f'{first} {last}'
+
+    print(f'Hi {full_name3()}!')
+
+
+greeting('John', 'Jimmy')
+
+#notes
+"""
+This was interesting but there isnt anything i was really missing. i did have some trouble getting the code to work but i can see where i was messing up now. i need to make sure i have all the right things indented
+correctly, especially when nesting functions due to local variable scope in python. another thing i learned is that python is one of the few languages that even allow for a function to be nested. and as far as when
+to nest vs when to keep functions separate, jordan had a good rule of thumb. if the only time you will use the function is inside or to serivce a parent fucntion then it is probably best to nest the function in the 
+parent one. otherwise keeping them separate is the better way to go. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title5 = 'Guide to Default Arguments in Python Functions'
+section_space5 = f'{section_title5}--------------------------------------------'
+print(section_space5)
