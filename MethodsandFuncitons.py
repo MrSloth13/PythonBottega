@@ -110,3 +110,35 @@ parent one. otherwise keeping them separate is the better way to go.
 section_title5 = 'Guide to Default Arguments in Python Functions'
 section_space5 = f'{section_title5}--------------------------------------------'
 print(section_space5)
+
+def greeting2(name = 'Guest'):
+    print(f'Hi {name}')
+
+
+#greeting2() this will result in an error since it needs an argument. 
+greeting2('Kristine')
+greeting2()
+
+#some things to not do. 
+
+def some_function(colletion = []):
+    colletion.append(1)
+    return colletion
+
+print(some_function())
+
+print(some_function())
+
+#notes
+"""
+This is a very interesting topic. So to start a default argument in a function is what an argument should be, if there is nothing provided. this way your program can be more dynamic in how it functions. to do so all you 
+need to do is call your argument, and = what you want it to be. its that simple. jordan did go over what to watch out for and this is where it gets interesting. one thing you never want to do is have a default argument be
+a muteable variable. meaning you dont want it to be able to be changed. especially list. this is because any action done to the default argument will carry on the enitre time. you want to use an ummutable variable so it 
+cannot actually be changed, just reassined which can then be used in its own separate instance. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title6 = 'How to Utilize Named Function Arguments in Python'
+section_space6 = f'{section_title6}--------------------------------------------'
+print(section_space6)
