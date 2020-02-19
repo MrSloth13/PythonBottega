@@ -142,3 +142,23 @@ cannot actually be changed, just reassined which can then be used in its own sep
 section_title6 = 'How to Utilize Named Function Arguments in Python'
 section_space6 = f'{section_title6}--------------------------------------------'
 print(section_space6)
+
+def full_name4(last, first):
+    print(f'{first} {last}')
+
+
+full_name4(first = 'Kristine', last = 'Hudgens')
+
+#so far all we have used for arguments is positional meaning the variables we put in are being mapped based off order. 
+
+#notes
+"""
+So this is interesting. so the way you can get around the positional mapping is when you call the function and actually pass in the arguments you can just put the name of the arugment that you want to pass and set 
+it equal to the argument you want it to be. i have an example above if that is confsuing. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = 'Guide to Function Argument Unpacking in Python'
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
