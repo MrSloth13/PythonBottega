@@ -162,3 +162,30 @@ it equal to the argument you want it to be. i have an example above if that is c
 section_title7 = 'Guide to Function Argument Unpacking in Python'
 section_space7 = f'{section_title7}--------------------------------------------'
 print(section_space7)
+
+def full_name5(first, last):
+    print((f'{first} {last}'))
+
+
+full_name5('John' ,'Adams')
+
+def greeting3(*args):
+    print("Hi " + " ".join(args))
+
+
+greeting3('Billy', 'jean' , 'Noel')
+
+#notes
+"""
+This is such a nice thing and i can already see it being one of the most important ones i have learned so far. so i would say the biggest two take aways from the video is that 'args' is the best practice
+name for when you use an unpacking method of using arguments. the next, and more important, is that when you pass is the arguments they will be treated as tuples. so this means when you call them in the 
+function itself you have to use tuple funcitons and methods or convert it to a list for more flexability. i would say that this is one of the best things i have seen about python so far. the fact that you can 
+take in as many arguments as you want and interact with them, loop over them, and treat a large group of arguments like a collection. it also makes it much more of a flexable function at the same time. any
+machine learning program is forsure going to use this because you might not be to sure how many arguments will be paseed into the function when it is called. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = 'Overview of Keyword Arguments in Python Functions'
+section_space8 = f'{section_title8}--------------------------------------------'
+print(section_space8)
