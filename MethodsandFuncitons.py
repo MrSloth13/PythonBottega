@@ -215,3 +215,30 @@ would any other time. 'greeting77(first_name = 'Thomas', last_name = 'Nelson'). 
 section_title9 = 'How to Combine All Argument Types in a Single Python Function'
 section_space9 = f'{section_title9}--------------------------------------------'
 print(section_space9)
+
+def greeting5(time_of_day, *args, **kwargs):
+    print(f"Hi {' '.join(args)}, I hope that you are having a great {time_of_day}")
+
+    if kwargs:
+        print('Your task for the day are:')
+        for key, val in kwargs.items():
+            print(f"{key} => {val}")
+
+
+greeting5('Morning',
+        'kristine', 'Hudgens',
+        first = 'Empty Dishwasher',
+        second = 'Take the dog outside',
+        third = 'Homework')
+
+#notes
+"""
+Okay so i think i am getting the hang of this now that we are using all of them together. i can see how each can work with eachother but also what they are best at compared to the other ways. over all i think that i 
+feel confident in my knowlege on this so far. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title10 = 'Guide to Python Lambdas'
+section_space10 = f'{section_title10}--------------------------------------------'
+print(section_space10)
