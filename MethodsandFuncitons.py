@@ -242,3 +242,52 @@ feel confident in my knowlege on this so far.
 section_title10 = 'Guide to Python Lambdas'
 section_space10 = f'{section_title10}--------------------------------------------'
 print(section_space10)
+
+#this is going to be interesting. mainly since i used a lambda in the reduce function and really didn't know how it worked.
+
+#lamba def
+"""
+a lambda is a function, that is usally a small one, that can be passed into other functions. this allows you to treat it like a variable but instead of having a string or a number stored you have a proccess or 
+some exicutabe code.
+"""
+
+full_name7 = lambda first, last: f'{first} {last}'
+
+print(full_name7('Thomas', 'Nelson'))
+
+def greeting6(name):
+    print(f'Hi there {name}')
+
+
+greeting6(full_name7('John', 'betty'))
+
+#notes
+"""
+Wow this all makes sense now when put in the context of the dynamic reduce function from a while back. so the syntax for it is ' lambda argument_name, argument_name: what you want the function to do '. now this is 
+normally stored in a variable but it some functions like the reduce function require a lambda to be passed into it. you can then call that variable that you stored the lambda in and pass in the arguments for it and
+it will all work as you'd expect. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title11 = 'Project Requirements: Build FizzBuzz in Python'
+section_space11 = f'{section_title11}--------------------------------------------'
+print(section_space11)
+
+#Oh boy here we go lol.
+
+"""
+Write a program that prints the numbers from 1 to 100
+But for miltiples of three print "Fizz" instead of the 
+number and for the multiples of five print "Buzz". For
+numbers which are muliples of both three and five print
+"FizzBuzz".
+"""
+
+# a multiple of 3 is any number that is multipled by 3.
+# a mulitple of 5 is any number that is multipled by 5.
+
+#though vomit
+"""
+Okay so i need to check to see if a number in a range from 
+"""
