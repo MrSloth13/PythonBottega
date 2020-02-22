@@ -287,7 +287,59 @@ numbers which are muliples of both three and five print
 # a multiple of 3 is any number that is multipled by 3.
 # a mulitple of 5 is any number that is multipled by 5.
 
-#though vomit
+
+def fizz_buzz(max_value):
+    max_value += 1
+
+    multiple_of_three_check = lambda a: a % 3
+    multiple_of_five_check = lambda a: a % 5
+
+    for num in range(1, max_value):
+        if multiple_of_three_check(num) == 0 and multiple_of_five_check(num) == 0:
+            print('FizzBuzz')
+        elif multiple_of_three_check(num) == 0:
+            print('Fizz')
+        elif multiple_of_five_check(num) == 0:
+            print('Buzz')
+        else:
+            print(num)
+
+
+
+fizz_buzz(100)
+
+#notes
 """
-Okay so i need to check to see if a number in a range from 
+So this went so much better then i expected. i was able to get it done in under 20 minutes and i even got a compliment on using lambda to get the solution that was required. i was expecting this
+to go very long but got it done in no time and i feel like i have a grasp on things. 
 """
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title12 = 'Solution to FizzBuzz in Python'
+section_space12 = f'{section_title12}--------------------------------------------'
+print(section_space12)
+
+#Jordans Soulution
+def jfizz_buzz(max_num):
+  for num in range(1, max_num + 1):
+    if num % 3 == 0 and num % 5 == 0:
+      print('FizzBuzz')
+    elif num % 5 == 0:
+      print('Buzz')
+    elif num % 3 == 0:
+      print('Fizz')
+    else:
+      print(num)
+
+
+jfizz_buzz(100)
+
+#notes
+"""
+I like how he did it a bit more then the way i did. i could have not used lambda and not reassigned the max value. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#i think that is it for the methods and the conditional section of the course for python. onto module section's!
