@@ -189,3 +189,29 @@ machine learning program is forsure going to use this because you might not be t
 section_title8 = 'Overview of Keyword Arguments in Python Functions'
 section_space8 = f'{section_title8}--------------------------------------------'
 print(section_space8)
+
+def greeting4(**kwargs):
+    if kwargs:
+        print(f'Hi {kwargs["first_name"]} {kwargs["last_name"]}, I hope your having a wonderful day!')
+    else:
+        print('Please either sign in or create an account')
+
+
+greeting4(first_name = 'Bobby', last_name = 'Martain')
+greeting4()
+
+#notes
+"""
+This was cool. so this is a further dive into the same topic as before but expands it a bit. this time we are working with keyword arguments. which is when you are assigning where an argument it mapped
+when you pass it in. if you want to use that when you call the function you would use a bit similar syntax but it DOES NOT use a TUPLE. so the syntax that you would put in the function is **kwargs which 
+shows you the syntax and the best practice name for it. now if you are like me when you heard 'keyword' in the title you thought i bet it works or uses dictionaries instead of tuple and you would be correct.
+unlike the normal argument unpacking this will have to be worked with like a dictionary with all of its related functions. or like i said above, separate the keys from the values and convert to a list while
+separating if you need more flexability. and you would use the same syntax in the function when you call it. so if you called the function 'greeting77()' you would still use the same keyword assignment as you
+would any other time. 'greeting77(first_name = 'Thomas', last_name = 'Nelson'). and the function will use the keyword as the key for the dictionary (duh), and use the value for the value for the occociated key
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title9 = 'How to Combine All Argument Types in a Single Python Function'
+section_space9 = f'{section_title9}--------------------------------------------'
+print(section_space9)
