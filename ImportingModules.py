@@ -38,3 +38,28 @@ go. I imagine that i could just import it in the terminal on here and call impor
 section_title3 = 'How to Import a Custom Python Module into Another File'
 section_space3 = f'{section_title3}--------------------------------------------'
 print(section_space3)
+
+#notes
+"""
+Jesus christ this is fucking getting hard as fuck. 
+
+import sys
+sys.path.insert(0, './libs')
+import helper
+
+def rendering():
+    print(helper.greeting('Thomas', 'Nelson'))
+
+
+rendering()
+
+that is basically what it all boiled down to. if the file you want import is in the same working directory then you can just say 'import name of directory' and it will work. but you will probably want
+to store it somewhere way different and that will require more work lol. you will need to follow the first three lines in the example above. do note that i am not sure how detailed you need to make the 
+location of the file but will need some experimenting around. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title4 = 'How to Import a Single Function from a Python Module'
+section_space4 = f'{section_title4}--------------------------------------------'
+print(section_space4)
