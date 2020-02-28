@@ -63,3 +63,31 @@ location of the file but will need some experimenting around.
 section_title4 = 'How to Import a Single Function from a Python Module'
 section_space4 = f'{section_title4}--------------------------------------------'
 print(section_space4)
+
+#notes
+"""
+I think that this is going to be like when you use 'import name as name' to import a single function. i think i did something very similar in one of the earlier projects. 
+
+
+Okay so i was almost right. i had the main concept down but i did not get the syntax right for it. the correct syntax is 'from name import name' pretty simple and i can already see where i got tripped
+up but i also think i understand what should be done. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title5 = 'How to Import a Module and Assign an Alias in Python'
+section_space5 = f'{section_title5}--------------------------------------------'
+print(section_space5)
+
+#notes
+"""
+Okay so i am almost 100% postive that what i said in the frist place in the lesson above is exactly what we are going to be doing here. 'import name as name' pretting simple. 
+
+and i was right lol. really short and simple video. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title6 = 'How to Import a Module and Assign an Alias in Python'
+section_space6 = f'{section_title6}--------------------------------------------'
+print(section_space6)
