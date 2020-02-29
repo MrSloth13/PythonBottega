@@ -88,6 +88,19 @@ and i was right lol. really short and simple video.
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title6 = 'How to Import a Module and Assign an Alias in Python'
+section_title6 = 'How to install PIP on a mac or windows computer'
 section_space6 = f'{section_title6}--------------------------------------------'
 print(section_space6)
+
+#notes
+""" 
+So i have definatly messed with pip before but its nice to know the proper way to install pip onto a computer no matter the operating system (was having some trouble getting it on 
+a linux distro and was bashing my head in) the next few guide will be going over some of the packages like numpy and stull like that. that is all pip really is, an access line to a 
+large network of other modules that could help in your project. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = 'How to install PIP on a mac or windows computer'
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
