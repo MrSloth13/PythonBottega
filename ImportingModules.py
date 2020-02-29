@@ -97,10 +97,35 @@ print(section_space6)
 So i have definatly messed with pip before but its nice to know the proper way to install pip onto a computer no matter the operating system (was having some trouble getting it on 
 a linux distro and was bashing my head in) the next few guide will be going over some of the packages like numpy and stull like that. that is all pip really is, an access line to a 
 large network of other modules that could help in your project. 
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 """
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title7 = 'How to install PIP on a mac or windows computer'
+section_title7 = 'Introduction to the Numpy Package in Python'
 section_space7 = f'{section_title7}--------------------------------------------'
 print(section_space7)
+
+#notes
+"""
+Okay so i was right when i said i have used numpy before and even importing or downloading i have done before when i had to set up that machine learning program to play flappy bird. and what numpy does
+best is work with arrays. now they are not exactly like list in python but are actually more similar to arrays in languages like C# and what not. i will past some of the teminal code we wrote for the 
+section below. 
+
+>>> import numpy as np
+>>> num_range = np.arange(16)
+>>> num_range
+array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15])
+>>> num_range.reshape(4, 4)
+array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11],
+       [12, 13, 14, 15]])
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = 'Introduction to the Numpy Package in Python'
+section_space8 = f'{section_title8}--------------------------------------------'
+print(section_space8)
