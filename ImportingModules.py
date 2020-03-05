@@ -126,6 +126,25 @@ array([[ 0,  1,  2,  3],
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title8 = 'Introduction to the Numpy Package in Python'
+section_title8 = 'Overview of the Requests Package in Python to Communicate with APIs'
 section_space8 = f'{section_title8}--------------------------------------------'
 print(section_space8)
+
+#hell yeah i finally get some knowlage on dealing with API's. this should be a fun and interesting video. 
+
+#notes
+"""
+Well this went differently then i expected it to. so in python you would communicate with an api with the requests library which means you will need to download and import it. and from what i have seen 
+so far you would be well off installing pretty print or pprint as well to help with organizing the json. so in the example we went through the api was layed out in json. which is really just a python 
+dictionary that doesn't want to be called one with weird syntax. dont worry too much about json yet since that is not the point in the lesson today. what is important is it works like a dictionary. so 
+when you call for a request it will return you json structure but not organize. that you would need pprint.pprint to get it to look right. and navigating works just like navigating through a dictionary 
+in python. you can store a certain request or put it in  a list and treat it how you want. i guess the really important thing that i should have probably lead with is to call an api you would use the 
+request library followed by the get function in said libarary. it would look like requests.get('link to api'). and yes you need to provide a link to the api to get access to it. and as of right now that
+is all i know about api's and communicating with them. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title9 = 'Overview of the Requests Package in Python to Communicate with APIs'
+section_space9 = f'{section_title9}--------------------------------------------'
+print(section_space9)
