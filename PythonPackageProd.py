@@ -5,6 +5,8 @@
 # use inflection
 # beautifulsoup
 
+# One important thing i have noticed is all of the links that lead to an actuall post are in h2 tags. all the rest of the items are just in an a tag while the links we want are in h2's
+
 import requests as req
 import inflection as inf
 from bs4 import BeautifulSoup
