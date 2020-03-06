@@ -8,13 +8,19 @@
 import requests as req
 import inflection as inf
 from bs4 import BeautifulSoup
+import pprint
 
-url = 'http://www.dailysmarty.com/topics/python.html'
+url = 'http://www.dailysmarty.com/topics/python'
 
-r = req.get(url)
-soup = BeautifulSoup(r.text, 'html.parser')
+page = req.get(url)
+soup = BeautifulSoup(page.content, 'html.parser')
+# <div class="full-width-div">
+# <div class="card">
+# <div class="col-mid-12">
+# <div class="post-item-wrapper">
+links = soup.find('div', class_="full-width-div")
 
-print(soup)
+print(links.prettify())
 
 
 

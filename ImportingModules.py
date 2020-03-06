@@ -145,6 +145,6 @@ is all i know about api's and communicating with them.
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title9 = 'Overview of the Requests Package in Python to Communicate with APIs'
+section_title9 = 'Python Package Section Project Requirement'
 section_space9 = f'{section_title9}--------------------------------------------'
 print(section_space9)
