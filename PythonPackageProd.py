@@ -16,13 +16,31 @@ url = 'http://www.dailysmarty.com/topics/python'
 
 page = req.get(url)
 soup = BeautifulSoup(page.content, 'html.parser')
-# <div class="full-width-div">
-# <div class="card">
-# <div class="col-mid-12">
-# <div class="post-item-wrapper">
 links = soup.find('div', class_="full-width-div")
 
-print(links.prettify())
+page_content = []
+for i in range(10):
+    titles = soup.find_all("h2")[i]
+    page_content.append(titles)
+
+h2_soup = BeautifulSoup(str(page_content), features=('html.parser'))
+
+tags = h2_soup.find_all('a')
+
+post_links = []
+
+for tag in tags:
+    post_links.append(tag.get('href'))
+
+for post_link in post_links:
+    trimmed_link = post_link[7:]
+    underscored_link = inf.underscore(trimmed_link)
+    human_list = inf.humanize(underscored_link)
+    print(human_list)
+    
+
+
+
 
 
 
