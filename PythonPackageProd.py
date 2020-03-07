@@ -35,7 +35,8 @@ for post_link in post_links:
     trimmed_link = post_link[7:]
     underscored_link = inf.underscore(trimmed_link)
     human_list = inf.humanize(underscored_link)
-    print(human_list)
+    titled_list = inf.titleize(human_list)
+    print(titled_list)
     
 
 

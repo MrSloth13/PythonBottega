@@ -148,3 +148,16 @@ is all i know about api's and communicating with them.
 section_title9 = 'Python Package Section Project Requirement'
 section_space9 = f'{section_title9}--------------------------------------------'
 print(section_space9)
+
+
+"""
+Okay so i have finished this and im not even going to add the soulution tab to this i am just going to say go look at the files of my solution and jordans. i would 
+say to look at jordans first since it is properly built out. mine is very much hard coded and cant be used on any site you put in. my file is 'PythonPackageProd.py'
+and jordans is 'JordansPackageScraper.py'. look at them and see all of the things that were useful.
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title11 = "Guide to Pipenv for Managing a Python Project's Packages and Environment"
+section_space11 = f'{section_title11}--------------------------------------------'
+print(section_space11)
