@@ -16,7 +16,6 @@ url = 'http://www.dailysmarty.com/topics/python'
 
 page = req.get(url)
 soup = BeautifulSoup(page.content, 'html.parser')
-links = soup.find('div', class_="full-width-div")
 
 page_content = []
 for i in range(10):
