@@ -178,6 +178,69 @@ request to pipenv is very simple. you would just use pipenv in place of pip. so 
 start. if you type start it will even open a new command promt from the virtual enviorment. that is about it for now but man was that a cool video. 
 """
 
+$ cd onedrive                                                                                                                                                                                                        
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive
+$ mkdir python-env-test
+
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive
+$ cd python-env-test
+
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive/python-env-test
+$ touch dependencys.txt                                                                                                                                                                                              
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive/python-env-test
+$ pipenv --three
+Creating a virtualenv for this project…
+Pipfile: C:\Users\Mobile Studio\OneDrive\python-env-test\Pipfile
+Using C:/Users/Mobile Studio/AppData/Local/Programs/Python/Python38/python.exe (3.8.1) to create virtualenv…
+[    ] Creating virtual environment...created virtual environment CPython3.8.1.final.0-64 in 4646ms
+
+  creator CPython3Windows(dest=C:\Users\Mobile Studio\.virtualenvs\python-env-test--btDk5rc, clear=False, global=False)
+
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=C:\Users\Mobile Studio\AppData\Local\Temp\tmppzf1gqez\seed-app-data\v1)
+
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\Mobile Studio\.virtualenvs\python-env-test--btDk5rc
+Creating a Pipfile for this project…
+
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive/python-env-test
+$ pipenv install numpy
+Installing numpy…
+Adding numpy to Pipfile's [packages]…
+Installation Succeeded
+Pipfile.lock not found, creating…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+Success!
+Updated Pipfile.lock (456e4b)!
+Installing dependencies from Pipfile.lock (456e4b)…
+  ================================ 1/1 - 00:00:01
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive/python-env-test
+$ pipenv install requests
+Installing requests…
+Adding requests to Pipfile's [packages]…
+Installation Succeeded
+Pipfile.lock (3831a8) out of date, updating to (456e4b)…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+Success!
+Updated Pipfile.lock (3831a8)!
+Installing dependencies from Pipfile.lock (3831a8)…
+  ================================ 6/6 - 00:00:02
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive/python-env-test
+$ pipenv shell
+Launching subshell in virtual environment…
+
+Mobile Studio@DESKTOP-SJ8A3GR MINGW64 ~/onedrive/python-env-test
+$ which python
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 section_title12 = "Guide to Pipenv for Managing a Python Project's Packages and Environment"
