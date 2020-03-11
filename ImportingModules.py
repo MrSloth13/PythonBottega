@@ -162,3 +162,24 @@ section_title11 = "Guide to Pipenv for Managing a Python Project's Packages and 
 section_space11 = f'{section_title11}--------------------------------------------'
 print(section_space11)
 
+"""
+I'm going to assume this is a package manager of sorts? I am not sure what else it could be. i do wonder though on weather its more in the terminal or if its like an application. 
+"""
+
+#notes
+""" 
+wow i really almost don't even know where to start. there was so much in that video. so to start i was right about this just being a package manager but he did make sure to explain why they are so important when working on projects. 
+to put it shortly, if you are working on a project and you are using, let say numpy for an example, and when you installed it on your system it was at version 1.4. now while you are working on that you get a new commission project
+and it will require an older verison on numpy. so you install it and get that project working but when you get back to the first one you will find that it is broken because when you installed the older version you overwrote the 
+one you had for the first project. so when you are using pipenv it will keep them separate in an virtual enviorment so when that project needs the dependencys it will be the correct verison. to install pipenv you, givin that you
+have python and pip installed, is as simple as pip install pipenv. once you have done that you can install pipenv into any project folder you would like. once you are in a folder you would want to put pipenv in you type 
+'pipenv --three' which will create a python 3 project. now what it will make in the directory is a pipfile. if you open it you will see what dependencies are installed in that enviorment. now to install things like numpy or 
+request to pipenv is very simple. you would just use pipenv in place of pip. so to install request would be 'pipenv install requests' instead of 'pip install requests' to activate the enviorment type pipenv shell and it will
+start. if you type start it will even open a new command promt from the virtual enviorment. that is about it for now but man was that a cool video. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title12 = "Guide to Pipenv for Managing a Python Project's Packages and Environment"
+section_space12 = f'{section_title12}--------------------------------------------'
+print(section_space12)
