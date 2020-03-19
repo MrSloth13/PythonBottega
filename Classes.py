@@ -116,3 +116,31 @@ call for them. its a good way to communicate to other developers what they shoul
 section_title5 = "Overview of Dunder Methods in Python: __init__"
 section_space5 = f'{section_title5}--------------------------------------------'
 print(section_space5)
+
+class Invoice3:
+
+    def __init__(self, client, total):
+        self.client = client
+        self.total = total
+    
+    def __str__(self):
+        return f'Invoice from {self.client} for {self.total}'
+
+inv = Invoice3('Google', 500)
+print(str(inv))
+
+#notes
+"""
+Okay so this definatly helped clear some things up on dunder functions. so like before dudnder is a function that comes in python but it a private function. which is where the double underscore
+comes from. now unlike C# where you have just private and public assignments python utilizes the __ or _ to show its protection level. so its best not to change the functions that you use. the
+two dunder fuctions we used in this video is the __init__ and __str__ functions. lets start with the easy one. the __str__ function from what i can see so far is really a way to wrap data you want
+into a string. because if you call the str() function and put the instatiated class as an argument, python will search through it for the __str__ function and run it. from what jordan says its a great
+debugging tool and i can see. you can easily have what you are reciving just put it all in a string so you can read it. and now that i think about it we just went over init where it is where you can 
+assing arguments as data for the rest of the functions and methods in said class. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title6 = "Overview of Dunder Methods in Python: __repr__"
+section_space6 = f'{section_title6}--------------------------------------------'
+print(section_space6)
