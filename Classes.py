@@ -144,3 +144,33 @@ assing arguments as data for the rest of the functions and methods in said class
 section_title6 = "Overview of Dunder Methods in Python: __repr__"
 section_space6 = f'{section_title6}--------------------------------------------'
 print(section_space6)
+
+class Invoice4:
+
+    def __init__(self, client, total):
+        self.client = client
+        self.total = total
+    
+    def __str__(self):
+        return f'Invoice from {self.client} for {self.total}'
+
+    def __repr__(self):
+        return f'Invoice <value: client: {self.client}, total: {self.total}>'
+
+
+inv = Invoice4('Google', 500)
+print(str(inv))
+print(repr(inv))
+
+#notes
+"""
+So there isn't too much of huge difference between repr and str but the main onw is really what they are used for. repr is what you would use when you want more of a raw data dump. you would use
+str when you want to format it and make it look all pretty but you would use repr when you want a data dump or to see what data is coming in at its raw form. to call it from the instantiaed class
+is the same way as str but with the repr() function and just pass in the class and the repr function will search through the class for a __repr__ function. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = "How to Build a Custom Iterator Class in Python"
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
