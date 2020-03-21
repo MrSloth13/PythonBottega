@@ -174,3 +174,66 @@ is the same way as str but with the repr() function and just pass in the class a
 section_title7 = "How to Build a Custom Iterator Class in Python"
 section_space7 = f'{section_title7}--------------------------------------------'
 print(section_space7)
+
+class Lineup:
+    def __init__(self, players):
+        self.players = players
+        self.last_player_index = (len(self.players) - 1)
+
+    def __iter__(self):
+        self.n = 0
+        return self
+
+    def get_player(self, n):
+        return self.players[n]
+
+    def __next__(self):
+        if self.n < self.last_player_index:
+            player = self.get_player(self.n)
+            self.n += 1
+            return player
+        elif self.n == self.last_player_index:
+            player = self.get_player(self.n)
+            self.n = 0
+            return player
+
+astros = [
+    'Springer',
+    'Bregman',
+    'Altuve',
+    'Correa',
+    'Reddick',
+    'Gonzalez',
+    'McCann',
+    'Davis',
+    'Tucker'
+]
+
+astros_lineup = Lineup(astros)
+proccess = iter(astros_lineup)
+
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+print(next(proccess))
+
+#notes
+"""
+Okay so this was cool. it was a bit like when i built out the number wizard game and had to make my own update funciton but here we are making our own itterator and its all in a class. and i can really start 
+to see where the dunder methods and all of that fit it. and after going through it i can see how to make an itterator that fits what you need. over all a good video. i even had to debug some things my self
+since they didn't work right away, it was my fault in the end though. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = "Overview of Iterators vs Generators in Python"
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
