@@ -237,3 +237,61 @@ since they didn't work right away, it was my fault in the end though.
 section_title7 = "Overview of Iterators vs Generators in Python"
 section_space7 = f'{section_title7}--------------------------------------------'
 print(section_space7)
+
+class Lineupgenerator:
+    def __init__(self, players):
+        self.players = players
+
+    def lineup(self):
+        lineup_max = len(self.players)
+        idx = 0
+
+        while True:
+            if idx < lineup_max:
+                yield self.players[idx]
+            else:
+                idx = 0
+                yield self.players[idx]
+
+            idx += 1
+
+    def __repr__(self):
+        return f'<InfinateLineup({self.players})'
+
+    def __str__(self):
+        return f'IninateLineup with players: {self.players}'
+
+
+full_lineup = Lineupgenerator(astros)
+astros_newlineup = full_lineup.lineup()
+
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+print(next(astros_newlineup))
+
+
+print(repr(astros_newlineup))
+print(str(astros_newlineup))
+
+#notes
+"""
+This is interesting. so we did the same thing as we did in the last video but we used a generator instead of an itterator. and one big thing to notes is to generate something you would use the keyword of 
+yeild. so its a bit like instatiate in C#. if i had to choose between making one or the other (itterator vs generator) i would actually probably rather use the itterator. and the only reason is you have to 
+make and work with an infinate loop which if i dont do it right. i do see jordans point where it is easier to read forsure. i have an easier time processing the itterator in my head then the generator haha. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title7 = "Class vs Instance Attributes in Python"
+section_space7 = f'{section_title7}--------------------------------------------'
+print(section_space7)
