@@ -295,3 +295,39 @@ make and work with an infinate loop which if i dont do it right. i do see jordan
 section_title7 = "Class vs Instance Attributes in Python"
 section_space7 = f'{section_title7}--------------------------------------------'
 print(section_space7)
+
+#if i was to guess what this video has to deal with its the fact that an instance of a class is not the same as the class and will probably be stored in a different part of memory. we will see though. 
+
+class Website:
+    def __init__(self, title):
+        self.title = title
+
+
+ws = Website('My Website Title')
+print(ws.__dict__)
+
+ts = Website('New Title')
+print(ts.__dict__)
+
+class Website2:
+    title = "My best class title"
+
+
+dw = Website2()
+
+print(dw.__dict__)
+print(dw.title)
+
+#notes
+"""
+So this is interesting especially after thinking about classes in C#. so a class attribute is not what we have been covering but is what i have done in C#. where you use a class to store either values 
+or functions. i have not yet pushed new values to classes an a new instance in C#. but that is what we have done so far in python. which is interesting because the class attributes work almost just like
+C# but all of the instance attributes can be interacted with like class attributes but also have another way of doing it. with dunder methods and what not. so in short a class attribute is specific to the 
+class itself and will remain constant in each instantiation while an instatntiated attribute will only apply to that one instance and not effect the over all class. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title8 = "Introduction to Inheritance in Python"
+section_space8 = f'{section_title8}--------------------------------------------'
+print(section_space8)
