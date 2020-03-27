@@ -331,3 +331,39 @@ class itself and will remain constant in each instantiation while an instatntiat
 section_title8 = "Introduction to Inheritance in Python"
 section_space8 = f'{section_title8}--------------------------------------------'
 print(section_space8)
+
+class User:
+    def __init__(self, email, first_name, last_name):
+        self.email = email
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def greeting(self):
+        return f'Hi {self.first_name} {self.last_name}'
+
+
+class AdminUser(User):
+    def active_users(self):
+        return'500'
+
+tiffany = AdminUser('tiffany@devcamp.com', 'Tiffany', 'Hudgens')
+kristine = User('kristine@devcamp.com', 'Kristine', 'Miller')
+
+print(tiffany.active_users())
+print(tiffany.email)
+print(kristine.email)
+print(tiffany.greeting())
+
+
+#notes
+"""
+Well that was definatly different then i thought it was going to work. so if you want a class to inherit from another when you make the class, before you put the : you put (name of class you want to inherit 
+from) and bam it is inheriting from the other class. you can now just add what ever specialized functions or variables you need. just remember that when you instatiate the class you still need to provide all
+the same information you would as if it were the parent class as well as the child class. otherwise it will be missing data. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title9 = "Using Polymorphism to Build an HTML Generator in Python"
+section_space9 = f'{section_title9}--------------------------------------------'
+print(section_space9)
