@@ -85,3 +85,68 @@ section_space3 = f'{section_title3}--------------------------------------------'
 print(section_space3)
 
 #oh boy here we go. 
+
+import math
+
+def pretty_price(gross_price, corrected_price):
+    low_price = math.floor(gross_price)
+    corrected_end = str(corrected_price)[-2:]
+    final_price = float(f'{low_price}.{corrected_end}')
+    return final_price
+
+
+print(pretty_price(3.21, 0.95))
+print(pretty_price(4.76, 99))
+print(pretty_price(2.01, 95))
+print(pretty_price(3.76, 0.99))
+
+#and bam i did it! not too hard but i definatly had to think about it for a second which is good. 
+#now time for jordans soulution. 
+
+def pretty_price2(gross_price, extension):
+    if isinstance(extension, int):
+        extension = extension * 0.01
+
+    return int(gross_price) + extension
+
+print(pretty_price2(3.50, 0.95))
+
+#notes
+"""
+man i can never git it like jordan does lol. i mean both of our work but he didnt even need to 
+math library and i didnt need any string conversions. all i had to do it get the float to an int 
+was convert it to an int. and for the extension all i had to do was check if it was an int, and 
+if it was to multiply it by 0.01 which would make it a decimal. then just return both of them 
+summed. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title4 = "Postman Installation Guide for Linux"
+section_space4 = f'{section_title4}--------------------------------------------'
+print(section_space4)
+
+#not sure if this will help at all to be honest since i dont run linux very often.
+
+#okay so i did have to install it but it was beyond easy on windows. 
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title4 = "Guide to Using Postman for External and Local API Requests on Linux"
+section_space4 = f'{section_title4}--------------------------------------------'
+print(section_space4)
+
+#notes
+"""
+well this guide was very much just for showing how you would use the postman tool to commmunicate
+with outside API's, which i do find it much nicer and easier to have that program do it instead of
+making a scrapper and getting the data the hard way. i mean i was able to go through it just fine 
+and find my way around the program, for what i needed, quite easy so i dont think i need to take too
+many more notes unti we work with it more. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title5 = "Environment Setup for Hello World Flask Application"
+section_space5 = f'{section_title5}--------------------------------------------'
+print(section_space5)
