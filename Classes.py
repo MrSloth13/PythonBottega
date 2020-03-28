@@ -442,8 +442,3 @@ so this most certainly doesn't help my understanding of polymorphism in any prog
 as lost as i was before the video
 """
 
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-section_title11 = "How to Create and Write to a File in Python"
-section_space11 = f'{section_title11}--------------------------------------------'
-print(section_space11)
