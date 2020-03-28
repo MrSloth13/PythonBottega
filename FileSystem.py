@@ -33,3 +33,55 @@ with new file and not an existing one.
 section_title2 = "Using Regular Expressions to List File Types in Python"
 section_space2 = f'{section_title2}--------------------------------------------'
 print(section_space2)
+
+"""
+to start we are not going to go crazy with what regular expressions are in detail but know that
+they are used to see patterns. so dont worry if you dont fully understand what a regular expression 
+is or isnt yet. there is an entire section later in the course on what they do. 
+"""
+
+"""
+import fnmatch
+from fnmatch import fnmatchcase
+import os
+
+def list_files():
+    for file in os.listdir('.'):
+        if fnmatch.fnmatch(file, '*.txt'):
+            print('text files:', file)
+
+        if fnmatch.fnmatch(file, '*.rb'):
+            print('ruby files:', file)
+
+# list_files()
+
+
+players = [
+    'Jose Altuve 2B',
+    'Carlos Correa SS',
+    'Alex Bregman 3B',
+    'Scooter Gennet 2B'
+]
+
+second_base_players = [player for player in players if fnmatchcase(player, "*2B")]
+
+print(second_base_players)
+print('players that play second base: ', second_base_players)
+"""
+
+#notes
+"""
+so for this i did create a bunch of dead dummie files so dont freak out when you see those. 
+now i see what he means by regular ecpressions which i would say is a fancy way of saying weird 
+syntax. so we used the library of fnmatch and by useing the '*characters you want to be matched
+or found' will say to python that those are the ending characters you are looking for. i imagine
+there is a ton of these that all do something different and help out a ton when refactoring code.
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title3 = "Build a Pretty Price Method in Python"
+section_space3 = f'{section_title3}--------------------------------------------'
+print(section_space3)
+
+#oh boy here we go. 
