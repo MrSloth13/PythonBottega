@@ -367,3 +367,83 @@ the same information you would as if it were the parent class as well as the chi
 section_title9 = "Using Polymorphism to Build an HTML Generator in Python"
 section_space9 = f'{section_title9}--------------------------------------------'
 print(section_space9)
+
+class Html:
+    def __init__(self, content):
+        self.content = content
+
+    def render(self):
+        raise NotImplementedError('Subclass must implement render method')
+
+
+class Heading(Html):
+    def render(self):
+        return f'<h1>{self.content}</h1>'
+
+class Div(Html):
+    def render(self):
+        return f'<div>{self.content}</div>'
+
+tags = [
+    Div('Some content'),
+    Heading('Some Big heading'),
+    Div('Another div')
+    ]
+
+for tag in tags:
+    print(tag.render())
+
+
+#notes
+"""
+i think this help me understand polymorphism better then the C# class. so if we break the word down poly means many and morphism means many changes. so trying to simplify it, polymorphism is just 
+making a class that can be changed in many ways. now he provided a great example which i feel works better then i could ever explain it. so he made a base class which was simple and made a 'abstact' 
+function meaning it is never meant to be called from that class, only child classes. you would use the 'raise NotImplementedError' in the function which would cause an error if anyone tried to call
+the function from the parent class instead of a child class. while the child classes are the ones that are called and use the 'abstract' functions as they need. so the example he gave of a html generator
+was perfect since he made a base html class which just took in content and would pipe it to the render function. while the child div and heading classes called the render function and actually gave them
+a return. so when you instantiated you called either the heading or div class and never mentioned the html parent class. 
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title10 = "Building Polymorphic Functions in Python"
+section_space10 = f'{section_title10}--------------------------------------------'
+print(section_space10)
+
+class Heading2:
+    def __init__(self, content):
+        self.content = content
+
+    def render(self):
+        return f'<h1>{self.content}</h1>'
+
+class Div2:
+    def __init__(self, content):
+        self.content = content
+
+    def render(self):
+        return f'<div>{self.content}</div>'
+
+div_one = Div2('New content')
+heading_one = Heading2('Boss new title')
+div_two = Div('More content')
+
+def html_render(tag_object):
+    print(tag_object.render())
+
+
+html_render(div_one)
+html_render(heading_one)
+html_render(div_two)
+
+#notes
+"""
+so this most certainly doesn't help my understanding of polymorphism in any programming language. i mean i get what he did and how it should be decided on which implementation option to go with but i am still
+as lost as i was before the video
+"""
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+section_title11 = "How to Create and Write to a File in Python"
+section_space11 = f'{section_title11}--------------------------------------------'
+print(section_space11)
