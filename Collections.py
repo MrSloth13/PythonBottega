@@ -2,6 +2,9 @@ section_title1 = 'Section introduction'
 section_space1 = f'{section_title1}--------------------------------------------'
 print(section_space1)
 
+#these are to comment everything out until i need it to not be
+'''
+
 #notes
 """
 So in the last two sections we covered strings and list but in this one we will be getting a bit more abstract with collections. now a collection isnt really a data type is a "collection"
@@ -1113,8 +1116,70 @@ call of the function itself. i just need to remeber to start string interpolatio
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-section_title33 = "Introduction to Python Loops"
+section_title33 = "Get the Average from a List in Python"
 section_space33 = f'{section_title33}--------------------------------------------'
 print(section_space33)
 
-#Starting a new file for loops.
+'''
+#these are to comment everything out until i need it to not be
+
+
+#Back in colletions again. i dont know why this wasn't in the collections section to begin with. 
+
+num_list = [1, 2, 3, 4, 5, 6]
+test_list = [2, 56, 7, 10]
+test_list2 = [100, 3, 5]
+test_list3 = [2, 2, 2, 2, 5, 6, 23, 12, 18, 23]
+test_list4 = [13, 13, 45, 87, 299, 2, 333, 723, 1237]
+
+
+"""
+So this is actually a little project where you have to make a function that gets the 
+average of a list of numbers you put in. and you can not use any libaraires. should be 
+pretty easy if im not being too cocky. 
+"""
+
+def list_averager(numbers_set):
+  total = 0
+
+  for i in numbers_set:
+    total += i
+
+  return total / len(numbers_set)
+
+#i do want to note that i could have made this by adding a conter and divinding off of that
+
+print(list_averager(num_list))
+print(list_averager(test_list))
+print(list_averager(test_list2))
+print(list_averager(test_list3))
+print(list_averager(test_list4))
+
+"""
+and i did it! like i said not too hard and i didnt have to look at any notes but it was a bit
+harder then i did think it was going to be but was still easy. and i havent seen jordans 
+soultuion yet but if i wasn't able to use len() then i could have made it by useing a counter
+variable that is added by one each time and divided the total by that. 
+"""
+
+#jordans soulution
+
+from functools import reduce
+
+def get_average(num_list):
+  total = reduce((lambda total, element: total + element), num_list)
+
+  return total / len(num_list)
+
+print(get_average(num_list))
+print(get_average(test_list))
+print(get_average(test_list2))
+print(get_average(test_list3))
+print(get_average(test_list4))
+
+#final notes
+"""
+so once again me and jordan just couldn't see eye to eye. he did use the functools libary but
+me and him still got the same result even though his is definatly shorter since he used
+functools
+"""

@@ -150,3 +150,6 @@ many more notes unti we work with it more.
 section_title5 = "Environment Setup for Hello World Flask Application"
 section_space5 = f'{section_title5}--------------------------------------------'
 print(section_space5)
+
+#welp looks like we are going to be learing how to make out own server API so that should be fun.
+
